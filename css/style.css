@@ -33,24 +33,159 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
 body {
     cursor: url(../../Football/img/cursor.cur), default;
     display: grid;
-        grid-template-areas: 
-            "header header header"
-            "content content sidebar"
-            "footer footer footer";
-}
-h2 {
-    font-family: Roboto Slab;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header header" 
+    "content content sidebar" 
+    "footer footer footer";
 }
 
-footer {
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
 }
+
 header {
     background-color: #1f1f56;
+    grid-area: header;
+}
+.content {
+    grid-area: content;
+}
+.footer {
+    grid-area: footer;
+}
+.aside {
+    grid-area: sidebar;
+}
+.menu {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #b1b1d2;
+    font-family: "Arial";
+}
+
+.number {
+    font-size: 18px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: none;
+}
+
+.skype {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.mail {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.button {
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 2px solid #fd8300;
+    max-width: 200px;
+    padding: 25px 2px;
+}
+
+.main_image {
+    max-width: 100%;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.detail {
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.build {
+    font-size: 14px;
+    line-height: 24px;
+    color: #1f1f56;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Arial";
+}
+
+.text {
+    width: 220px;
+    height: 53px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+   
+    font-size: 14px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.contacts {
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-direction {
+    display: flex;
+    flex-direction: row;
+}
+
+.align-items {
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
