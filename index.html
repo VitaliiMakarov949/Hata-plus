@@ -14,26 +14,29 @@
 <body>
     <header class="header">
         <div class="wrapper">
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Про компанію</a></li>
-                    <li><a href="#">Наші будівлі</a></li>
-                    <li><a href="#">Акції</a></li>
-                    <li><a href="#">Контакти</a></li>
-                </ul>
+            <div class="flex-between">
+                <nav>
+                    <ul class="menu flex-between">
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Про компанію</a></li>
+                        <li><a href="#">Наші будівлі</a></li>
+                        <li><a href="#">Акції</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                    <picture>
+                        <source srcset="img/fb.webp" type="image/webp">
+                        <img src="img/fb.png" alt="">
+                    </picture>
+                </nav>
                 <picture>
-                    <source srcset="img/fb.webp" type="image/webp">
-                    <img src="img/fb.png" alt="">
+                    <source srcset="img/tw.webp" type="image/webp">
+                    <img src="img/tw.png" alt="">
                 </picture>
-            </nav>
-            <source srcset="img/tw.webp" type="image/webp">
-            <img src="img/tw.png" alt="">
-            </picture>
-            <picture>
-                <source srcset="img/inst.webp" type="image/webp">
-                <img src="img/inst.png" alt="">
-            </picture>
+                <picture>
+                    <source srcset="img/inst.webp" type="image/webp">
+                    <img src="img/inst.png" alt="">
+                </picture>
+            </div>
         </div>
     </header>
     <main class="content">
@@ -60,12 +63,14 @@
         <a href="mailto:hataplus@hata.com.ua" class="mail">hataplus@hata.com.ua</a>
         <a href="#" class="skype">hataplus</a>
         <a href="#" class="button">Замовити дзвінок</a>
-        <picture class="main_image">
-            <img src="img/Rectangle 9 (1).png" alt="">
-        </picture>
-        <h2>Пропозиція місяця</h2>
-        <p>Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
-        <p>5999 грн / м<sup>2</sup></p>
+        <div class="main_image main_text">
+            <h2>Пропозиція місяця</h2>
+            <p>Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
+            <div class="special">
+                <p class="price">5999</p>
+                <p class="metter">грн / м<sup>2</sup></p>
+            </div>
+        </div>
         <h1>Компанія “Хата Плюс”</h1>
         <p>Напевно кожен з нас не раз думав про те, щоб купити будинок котедж і насолоджуватися життям в гармонії з
             природою. Дійсно, для багатьох жителів мегаполісу заміська нерухомість під містом стала справжньою
@@ -77,46 +82,54 @@
             барбекю.
         </p>
         <a href="#" class="detail">Детальніше про нас</a>
-        <h2>Популярні проекти</h2>
-        <figure class="">
-            <figcaption>
-                <picture>
-                    <source srcset="img/Rectangle 11.webp" type="image/webp">
-                    <img src="img/Rectangle 11.png" alt="">
-                </picture>
-                <a href="#" class="build">EDMONTON (338 м<sup>2</sup>)</a>
-                <p>Загальна площа будови: 312 м<sup>2</sup></p>
-                <p>Кількість спалень: 4</p>
-                <p>Гараж: 2 авто</p>
-            </figcaption>
-            <figcaption>
-                <a href="#">
+        <p class="line"></p>
+        <h3>Популярні проекти</h3>
+        <div class="flex-just">
+            <figure>
+                <figcaption>
                     <picture>
-                        <source srcset="img/Rectangle 11 copy.webp" type="image/webp">
-                        <img src="img/Rectangle 11 copy.png" alt="">
+                        <source srcset="img/Rectangle 11.webp" type="image/webp">
+                        <img src="img/Rectangle 11.png" alt="">
                     </picture>
-                </a>
-                <a href="#" class="build">MONTREAL (332 м<sup>2</sup>)</a>
-                <p>Загальна площа будови: 290 м<sup>2</sup></p>
-                <p>Кількість спалень: 3</p>
-                <p>Гараж: 2 авто</p>
-            </figcaption>
-            <figcaption>
-                <picture>
-                    <source srcset="img/Rectangle 11 copy (1).webp" type="image/webp">
-                    <img src="img/Rectangle 11 copy (1).png" alt="">
-                </picture>
-                <a href="#" class="build">CALGARY (294 м<sup>2</sup>)</a>
-                <p>Загальна площа будови: 272 м<sup>2</sup></p>
-                <p>Кількість спалень: 3</p>
-                <p>Гараж: 2 авто</p>
-            </figcaption>
-        </figure>
+                    <a href="#" class="build">EDMONTON (338 м<sup>2</sup>)</a>
+                    <p>Загальна площа будови: 312 м<sup>2</sup></p>
+                    <p>Кількість спалень: 4</p>
+                    <p>Гараж: 2 авто</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>
+                    <a href="#">
+                        <picture>
+                            <source srcset="img/Rectangle 11 copy.webp" type="image/webp">
+                            <img src="img/Rectangle 11 copy.png" alt="">
+                        </picture>
+                    </a>
+                    <a href="#" class="build">MONTREAL (332 м<sup>2</sup>)</a>
+                    <p>Загальна площа будови: 290 м<sup>2</sup></p>
+                    <p>Кількість спалень: 3</p>
+                    <p>Гараж: 2 авто</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>
+                    <picture>
+                        <source srcset="img/Rectangle 11 copy (1).webp" type="image/webp">
+                        <img src="img/Rectangle 11 copy (1).png" alt="">
+                    </picture>
+                    <a href="#" class="build">CALGARY (294 м<sup>2</sup>)</a>
+                    <p>Загальна площа будови: 272 м<sup>2</sup></p>
+                    <p>Кількість спалень: 3</p>
+                    <p>Гараж: 2 авто</p>
+                </figcaption>
+            </figure>
+            </figure>
+        </div>
     </main>
     <aside class="aside">
         <h2>Категорії проектів</h2>
         <nav>
-            <ul class="sidebar">
+            <ul class="sidebar flex-just">
                 <li><a href="#">Генеральний план</a></li>
                 <li><a href="#">Навколишнє середовище</a></li>
                 <ul>

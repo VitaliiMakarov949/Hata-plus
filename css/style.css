@@ -33,7 +33,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -41,38 +41,43 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
-    "header header header" 
-    "content content sidebar" 
-    "footer footer footer";
+    grid-template-areas:
+        "header header header"
+        "content content sidebar"
+        "footer footer footer";
 }
 
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 15px;
-    
+
 }
 
 header {
     background-color: #1f1f56;
     grid-area: header;
 }
+
 .content {
     grid-area: content;
 }
+
 .footer {
     grid-area: footer;
 }
+
 .aside {
     grid-area: sidebar;
 }
+
 .menu {
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 24px;
     color: #b1b1d2;
     font-family: "Arial";
+    list-style: none;
 }
 
 .number {
@@ -110,11 +115,55 @@ header {
 
 .main_image {
     max-width: 100%;
+    min-height: 200px;
     margin-bottom: 10px;
+    display: block;
+    background-image: url(../img/Rectangle.png);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-h2 {
+.main_text h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.main_text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.special {
+    display: flex;
+    justify-content: center;
+}
+
+.price {
+    font-size: 40px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.metter {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+h3 {
     font-size: 24px;
     line-height: 24px;
     color: #24242b;
@@ -129,6 +178,12 @@ h2 {
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
+}
+
+.line {
+    width: 713px;
+    height: 1px;
+    background-color: #e4e4ec;
 }
 
 .build {
@@ -155,11 +210,12 @@ h2 {
 }
 
 .sidebar {
-   
+    max-width: 219px;
     font-size: 14px;
     line-height: 24px;
     color: #25252c;
     font-family: "Arial";
+    list-style: none;
 }
 
 .contacts {
@@ -181,11 +237,16 @@ h2 {
 
 .align-items {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .column {
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+.flex-just {
+    display: flex;
+    justify-content: space-around;
 }
