@@ -67,9 +67,7 @@ header {
     grid-area: footer;
 }
 
-.aside {
-    grid-area: sidebar;
-}
+
 
 .menu {
     font-size: 14px;
@@ -78,6 +76,8 @@ header {
     color: #b1b1d2;
     font-family: "Arial";
     list-style: none;
+    padding: 23px 0 19px;
+    gap: 26px;
 }
 
 .number {
@@ -107,7 +107,8 @@ header {
 
 .button {
     border-radius: 25px;
-    background-color: #ffffff;
+    border-width: 2px;
+    background-color: #fff;
     border: 2px solid #fd8300;
     max-width: 200px;
     padding: 25px 2px;
@@ -204,6 +205,15 @@ h3 {
     font-family: "Arial";
 }
 
+.description {
+    width: 677px;
+    height: 193px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    font-family: "Arial";
+}
+
 .flex-between {
     display: flex;
     justify-content: space-between;
@@ -243,10 +253,77 @@ h3 {
 .column {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
 }
 
 .flex-just {
     display: flex;
     justify-content: space-around;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icons {
+    gap: 26px;
+    padding: 17px 23px;
+}
+
+.second>h2 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    width: 219px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #1f1f56;
+    padding: 13px 15px;
+}
+
+.asside>a {
+    margin: 0;
+    padding: 0;
+    width: 219px;
+    height: 44px;
+    background-color: #e4e4ec;
+    text-decoration: none;
+}
+
+.sidemenu {
+    display: none;
+    background-color: #e4e4ec;
+}
+
+.asside {
+    background-color: #e4e4ec;
+}
+
+li {
+    padding: 16px 14px;
+}
+
+.asside>li>a:hover {
+    display: block;
+    padding: 10px 10px;
+    background-color: #fd8300;
+    transition: all .5s ease;
+    width: 219px;
+    height: 44px;
+}
+
+.sidemenu>li>a:hover {
+    display: block;
+    width: 219px;
+    height: 44px;
+    background-color: #cecedd;
 }
