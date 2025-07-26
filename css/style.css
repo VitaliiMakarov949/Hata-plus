@@ -79,7 +79,14 @@ header {
     padding: 23px 0 19px;
     gap: 26px;
 }
-
+.menu li>a {
+    list-style: none;
+    text-decoration: none;
+}
+.menu>li>a:hover {
+    transition: all .9s ease;
+    color: #fd8300;
+}
 .number {
     font-size: 18px;
     line-height: 24px;
