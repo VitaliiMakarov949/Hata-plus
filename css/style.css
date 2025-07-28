@@ -65,6 +65,10 @@ header {
 
 .footer {
     grid-area: footer;
+    background-color: #ededf5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -79,14 +83,16 @@ header {
     padding: 23px 0 19px;
     gap: 26px;
 }
+
 .menu li>a {
-    list-style: none;
     text-decoration: none;
 }
+
 .menu>li>a:hover {
     transition: all .9s ease;
     color: #fd8300;
 }
+
 .number {
     font-size: 18px;
     line-height: 24px;
@@ -177,6 +183,7 @@ h3 {
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
+    margin-bottom: 24px;
 }
 
 .detail {
@@ -186,6 +193,11 @@ h3 {
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
+}
+
+.detail a {
+    margin-bottom: 35px;
+
 }
 
 .line {
@@ -230,9 +242,15 @@ h3 {
     max-width: 219px;
     font-size: 14px;
     line-height: 24px;
-    color: #25252c;
     font-family: "Arial";
     list-style: none;
+    text-decoration: none;
+}
+
+.sidebar li>a:hover {
+    color: #fd8300;
+    list-style: none;
+    text-decoration: none;
 }
 
 .contacts {
@@ -240,6 +258,13 @@ h3 {
     line-height: 26px;
     color: #666666;
     font-family: "Arial";
+    list-style: none;
+}
+.contacts li>a:hover {
+    color: #fd8300;
+    transition: all .5s ease;
+    list-style: none;
+    text-decoration: none;
 }
 
 .flex-around {
@@ -284,10 +309,16 @@ h3 {
     padding: 17px 23px;
 }
 
+.icons img:hover {
+    background-color: #fd8300;
+    transition: all .5s ease;
+
+}
+
 .second>h2 {
     font-size: 16px;
     line-height: 24px;
-    color: #ffffff;
+    color: #fff;
     font-weight: 700;
     font-family: "Roboto Slab";
     width: 219px;
@@ -334,3 +365,4 @@ li {
     height: 44px;
     background-color: #cecedd;
 }
+
