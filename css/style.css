@@ -37,7 +37,7 @@
 }
 
 body {
-    cursor: url(../../Football/img/cursor.cur), default;
+    cursor: url(../img/cursor.cur), default;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto 1fr auto;
@@ -53,7 +53,9 @@ body {
     padding: 0 15px;
 
 }
-
+a {
+    cursor: url(../img/cursor1.cur), default;
+}
 header {
     background-color: #1f1f56;
     grid-area: header;
@@ -119,12 +121,16 @@ header {
 }
 
 .button {
+    display: block;
     border-radius: 25px;
     border-width: 2px;
     background-color: #fff;
     border: 2px solid #fd8300;
-    max-width: 200px;
-    padding: 25px 2px;
+    padding: 19px 27px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
 }
 
 .main_image {
@@ -249,9 +255,11 @@ h3 {
 
 .sidebar li>a:hover {
     color: #fd8300;
+    transition: all .5s ease;
     list-style: none;
     text-decoration: none;
 }
+
 
 .contacts {
     font-size: 14px;
@@ -259,7 +267,9 @@ h3 {
     color: #666666;
     font-family: "Arial";
     list-style: none;
+    padding: 14px 119px;
 }
+
 .contacts li>a:hover {
     color: #fd8300;
     transition: all .5s ease;
@@ -285,7 +295,6 @@ h3 {
 .column {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .flex-just {
@@ -312,6 +321,7 @@ h3 {
 .icons img:hover {
     background-color: #fd8300;
     transition: all .5s ease;
+    transform: scale(1.5);
 
 }
 
@@ -340,6 +350,7 @@ h3 {
 .sidemenu {
     display: none;
     background-color: #e4e4ec;
+    list-style: none;
 }
 
 .asside {
@@ -350,19 +361,88 @@ li {
     padding: 16px 14px;
 }
 
+.asside li {
+    position: relative;
+}
+
 .asside>li>a:hover {
     display: block;
     padding: 10px 10px;
     background-color: #fd8300;
     transition: all .5s ease;
-    width: 219px;
-    height: 44px;
+    color: #fff;
+}
+
+.asside li:hover>.sidemenu {
+    display: block;
 }
 
 .sidemenu>li>a:hover {
     display: block;
-    width: 219px;
-    height: 44px;
     background-color: #cecedd;
+
 }
 
+
+.build a {
+    position: relative;
+    text-decoration: none;
+}
+
+.build a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #1f1f56;
+    transition: all .5s ease;
+}
+
+.build a:hover {
+    color: #1f1f56;
+}
+
+.build a:hover::before {
+    width: 100%;
+}
+
+.build p {
+    color: #9999a6;
+}
+
+.privacy {
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+}
+
+.privacy1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    background-color: #dcdce6;
+    align-items: center;
+}
+.tel {
+    padding: 38px 11px;
+}
+.skype_mail {
+    padding: 36px 51px;
+}
+.mail_skype {
+    padding: 41px 12px;
+}
+.text_mail {
+    padding: 41px 12px;
+}
+
+.icon_phone {
+    padding: 33px 11px;
+}
+.phone_number {
+    padding: 36px 11px;
+}
