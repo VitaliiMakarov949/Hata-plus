@@ -42,7 +42,7 @@ body {
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
     "header header header"
-    "content content aside"
+    "content content content"
     "footer footer footer";
     font-family: "Arial";
     cursor: url(../img/cursor.cur), default;
@@ -85,6 +85,7 @@ footer {
 }
 .topline {
     background-color: #1f1f56;
+    padding: 17px 0;
 }
 
 
@@ -93,7 +94,6 @@ footer {
     letter-spacing: 2px;
     line-height: 1.7em;
     color: #b1b1d2;
-    font-family: "Arial";
     list-style: none;
     padding: 16px 0;
     gap: 26px;
@@ -244,8 +244,7 @@ h3 {
 }
 
 .text {
-    width: 220px;
-    height: 53px;
+    max-width: 220px;
     font-size: 13px;
     line-height: 1.3em;
     color: #9999a6;
@@ -253,8 +252,7 @@ h3 {
 }
 
 .description {
-    width: 677px;
-    height: 193px;
+    max-width: 677px;
     font-size: 14px;
     line-height: 1.7em;
     color: #666;
@@ -264,16 +262,6 @@ h3 {
 .flex-between {
     display: flex;
     justify-content: space-between;
-}
-
-.flex-align {
-    display: flex;
-    align-items: center;
-}
-
-.flex-around {
-    display: flex;
-    justify-content: space-around;
 }
 
 .sidebar {
@@ -310,37 +298,13 @@ h3 {
     color: #fd8300;
 }
 
-.align-items {
-    display: flex;
-    align-items: flex-end;
+
+path {
+    fill: #fff;
 }
-
-.flex-just {
-    display: flex;
-    justify-content: space-around;
+.icon-link:hover path {
+    fill: #fd8300;
 }
-
-
-.sale {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.icons {
-    display: flex;
-    align-items: center;
-}
-
-.icon-link {
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.icon-link:hover {
-    color: #fd8300;
-}
-
 .second>h2 {
     font-size: 16px;
     line-height: 1.5em;
@@ -415,8 +379,12 @@ h3 {
     background-color: #dcdce6;
 }
 
-
-
+.column {
+    column-gap: 24px;
+}
+.items_center {
+    align-items: center;
+}
 .tel {
     padding: 38px 11px;
 }
