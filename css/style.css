@@ -89,7 +89,7 @@ li {
 .menu {
     font-size: 14px;
     letter-spacing: 2px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #b1b1d2;
     font-family: "Arial";
     list-style: none;
@@ -108,7 +108,7 @@ li {
 
 .number {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.3em;
     color: #25252c;
     font-weight: bold;
     font-family: "Arial";
@@ -117,7 +117,7 @@ li {
 
 .skype {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
     text-decoration: underline;
     color: #25252c;
     font-family: "Arial";
@@ -125,7 +125,7 @@ li {
 
 .mail {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
     text-decoration: underline;
     color: #25252c;
     font-family: "Arial";
@@ -137,7 +137,6 @@ li {
     background-color: #fff;
     border: 2px solid #fd8300;
     padding: 19px 27px;
-    margin-top: 32px;
     margin-bottom: 12px;
     display: flex;
     align-items: center;
@@ -170,7 +169,6 @@ li {
 .main_text h2 {
     font-size: 30px;
     letter-spacing: 2px;
-    line-height: 24px;
     text-transform: uppercase;
     color: #fff;
     font-weight: 700;
@@ -179,7 +177,7 @@ li {
 
 .main_text {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #fff;
     font-family: "Arial";
     text-align: center;
@@ -192,7 +190,6 @@ li {
 
 .price {
     font-size: 40px;
-    line-height: 24px;
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
@@ -200,7 +197,7 @@ li {
 
 .metter {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1em;
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
@@ -208,7 +205,7 @@ li {
 
 h3 {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1em;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -217,7 +214,7 @@ h3 {
 
 .detail {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     text-decoration: underline;
     color: #fd8300;
     font-weight: bold;
@@ -237,7 +234,7 @@ h3 {
 
 .build {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #1f1f56;
     font-weight: bold;
     text-decoration: none;
@@ -248,7 +245,7 @@ h3 {
     width: 220px;
     height: 53px;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 1.3em;
     color: #9999a6;
     font-family: "Arial";
 }
@@ -257,7 +254,7 @@ h3 {
     width: 677px;
     height: 193px;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #666;
     font-family: "Arial";
 }
@@ -280,7 +277,7 @@ h3 {
 .sidebar {
     min-width: 219px;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1,7em;
     list-style: none;
     text-decoration: none;
 }
@@ -295,7 +292,7 @@ h3 {
 
 .contacts {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.8em;
     color: #666;
     font-family: "Arial";
     list-style: none;
@@ -344,7 +341,7 @@ h3 {
 
 .second>h2 {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
     color: #fff;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -408,18 +405,15 @@ h3 {
     color: #9999a6;
 }
 
-.privacy {
+.copy {
     font-size: 13px;
-    line-height: 18px;
+    line-height: 1.3em;
     color: #9999a6;
+    text-align: center;
+    background-color: #dcdce6;
 }
 
-.privacy1 {
-    display: flex;
-    justify-content: center;
-    background-color: #dcdce6;
-    align-items: center;
-}
+
 
 .tel {
     padding: 38px 11px;
