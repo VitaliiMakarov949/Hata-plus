@@ -61,7 +61,7 @@ header {
     grid-area: header;
 }
 
-li {
+.sidebar li {
     padding: 16px 14px;
 }
 
@@ -90,14 +90,15 @@ footer {
     padding: 17px 0;
 }
 
-
+.top {
+    padding: 30px 0 29px;
+}
 .menu {
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 1.7em;
     color: #b1b1d2;
     list-style: none;
-    padding: 16px 0;
     gap: 26px;
 }
 
@@ -132,7 +133,7 @@ footer {
     line-height: 1.5em;
     text-decoration: underline;
     color: #25252c;
-    font-family: "Arial";
+    
 }
 
 .button {
@@ -140,8 +141,7 @@ footer {
     border-width: 2px;
     background-color: #fff;
     border: 2px solid #fd8300;
-    padding: 19px 27px;
-    margin-bottom: 12px;
+    padding: 15px 23px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,9 +161,7 @@ footer {
 
 .main_image {
     max-width: 100%;
-    min-height: 200px;
     margin-bottom: 10px;
-    display: block;
     background-image: url(../img/Rectangle.png);
     background-size: cover;
     background-position: center;
@@ -210,30 +208,35 @@ h3 {
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    margin-bottom: 24px;
+    padding: 31px 0 25px;
 }
 h1 {
     font-family: "Roboto Slab";
+    padding: 42px 0 28px;
 }
+.first {
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+
 .detail {
     font-size: 14px;
     line-height: 1.7em;
     text-decoration: underline;
     color: #fd8300;
     font-weight: bold;
-    font-family: "Arial";
 }
 
-.detail a {
-    margin-bottom: 35px;
-
+.more {
+    padding: 25px 0 34px;
 }
-
-.line {
+.hr {
     width: 713px;
     height: 1px;
     background-color: #e4e4ec;
+    padding: ;
 }
+
 
 .build {
     font-size: 14px;
@@ -257,7 +260,7 @@ h1 {
     font-size: 14px;
     line-height: 1.7em;
     color: #666;
-    font-family: "Arial";
+
 }
 
 .flex-between {
@@ -390,20 +393,16 @@ path {
     align-items: center;
 }
 
-.tel {
-    padding: 38px 11px;
-}
+
 
 .skype_mail {
     padding: 36px 51px;
 }
 
-.mail_skype {
-    padding: 41px 12px;
+
+ .tel {
+padding-left: 17px;
 }
-.mail_skype p {
-    padding: 12px 12px;
-}  
 .text_mail {
     padding: 41px 12px;
 }
@@ -417,4 +416,22 @@ path {
 }
 .words {
     padding: 12px 0 16px;
+}
+.sidebars {
+    font-size: 14px;
+line-height: 1.8em;
+color: #666;
+}
+
+.sidebars a {
+    transition: all .5s ease;
+    text-decoration: none;
+
+}
+
+.sidebars a:hover {
+    color: #fd8300;
+}
+.bottom {
+    padding: 41px ;
 }
