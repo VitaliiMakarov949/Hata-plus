@@ -41,9 +41,9 @@ body {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
-    "header header header"
-    "content content content"
-    "footer footer footer";
+        "header header header"
+        "content content content"
+        "footer footer footer";
     font-family: "Arial";
     cursor: url(../img/cursor.cur), default;
 }
@@ -69,12 +69,13 @@ li {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 15px;
-    
+
 }
 
 main {
     grid-area: content;
 }
+
 aside {
     grid-area: aside;
 }
@@ -83,6 +84,7 @@ footer {
     grid-area: footer;
     background-color: #ededf5;
 }
+
 .topline {
     background-color: #1f1f56;
     padding: 17px 0;
@@ -181,7 +183,6 @@ footer {
     font-size: 14px;
     line-height: 1.7em;
     color: #fff;
-    font-family: "Arial";
     text-align: center;
 }
 
@@ -194,7 +195,6 @@ footer {
     font-size: 40px;
     color: #fd8300;
     font-weight: bold;
-    font-family: "Arial";
 }
 
 .metter {
@@ -202,7 +202,6 @@ footer {
     line-height: 1em;
     color: #fd8300;
     font-weight: bold;
-    font-family: "Arial";
 }
 
 h3 {
@@ -213,7 +212,9 @@ h3 {
     font-family: "Roboto Slab";
     margin-bottom: 24px;
 }
-
+h1 {
+    font-family: "Roboto Slab";
+}
 .detail {
     font-size: 14px;
     line-height: 1.7em;
@@ -267,7 +268,7 @@ h3 {
 .sidebar {
     min-width: 219px;
     font-size: 14px;
-    line-height: 1,7em;
+    line-height: 1, 7em;
     list-style: none;
     text-decoration: none;
 }
@@ -302,9 +303,11 @@ h3 {
 path {
     fill: #fff;
 }
+
 .icon-link:hover path {
     fill: #fd8300;
 }
+
 .second>h2 {
     font-size: 16px;
     line-height: 1.5em;
@@ -382,9 +385,11 @@ path {
 .column {
     column-gap: 24px;
 }
+
 .items_center {
     align-items: center;
 }
+
 .tel {
     padding: 38px 11px;
 }
@@ -396,7 +401,9 @@ path {
 .mail_skype {
     padding: 41px 12px;
 }
-
+.mail_skype p {
+    padding: 12px 12px;
+}  
 .text_mail {
     padding: 41px 12px;
 }
@@ -408,4 +415,6 @@ path {
 .phone_number {
     padding: 36px 11px;
 }
-
+.words {
+    padding: 12px 0 16px;
+}
