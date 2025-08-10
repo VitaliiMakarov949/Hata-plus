@@ -93,6 +93,7 @@ footer {
 .top {
     padding: 30px 0 29px;
 }
+
 .menu {
     font-size: 14px;
     letter-spacing: 2px;
@@ -133,7 +134,7 @@ footer {
     line-height: 1.5em;
     text-decoration: underline;
     color: #25252c;
-    
+
 }
 
 .button {
@@ -210,10 +211,12 @@ h3 {
     font-family: "Roboto Slab";
     padding: 31px 0 25px;
 }
+
 h1 {
     font-family: "Roboto Slab";
     padding: 42px 0 28px;
 }
+
 .first {
     padding-bottom: 20px;
     letter-spacing: 1px;
@@ -230,6 +233,7 @@ h1 {
 .more {
     padding: 25px 0 34px;
 }
+
 .hr {
     width: 713px;
     height: 1px;
@@ -322,10 +326,12 @@ path {
     padding: 13px 15px;
 }
 
-.asside>a {
+.asside a {
+    display: block;
     margin: 0;
     padding: 0;
     background-color: #e4e4ec;
+    position: relative;
 }
 
 .sidemenu {
@@ -335,6 +341,7 @@ path {
 
 .asside {
     background-color: #e4e4ec;
+    border-radius: 3px;
 }
 
 .asside>li>a:hover {
@@ -345,11 +352,26 @@ path {
     color: #fff;
 }
 
-.asside li:hover>.sidemenu {
+.asside li:hover .sidemenu {
     display: block;
+    box-shadow: inset 0px -1px 0px #cecedd;
+    background-color: #e4e4ec;
 }
-
-
+.asside a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #666;
+    border-right: 2px solid #666;
+    transform: translateY(-50%) rotate(45deg);
+}
+.asside li:hover > a::before {
+    transform: translateY(-50%) rotate(135deg);
+}
 .build a {
     position: relative;
 }
@@ -400,9 +422,10 @@ path {
 }
 
 
- .tel {
-padding-left: 17px;
+.tel {
+    padding-left: 17px;
 }
+
 .text_mail {
     padding: 41px 12px;
 }
@@ -414,13 +437,15 @@ padding-left: 17px;
 .phone_number {
     padding: 36px 11px;
 }
+
 .words {
     padding: 12px 0 16px;
 }
+
 .sidebars {
     font-size: 14px;
-line-height: 1.8em;
-color: #666;
+    line-height: 1.8em;
+    color: #666;
 }
 
 .sidebars a {
@@ -432,6 +457,13 @@ color: #666;
 .sidebars a:hover {
     color: #fd8300;
 }
+
 .bottom {
-    padding: 41px ;
+    padding: 41px;
+}
+
+figure p {
+    font-size: 13px;
+    line-height: 1.4em;
+    color: #9999a6;
 }
