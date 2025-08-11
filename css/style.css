@@ -82,9 +82,10 @@ aside {
 
 footer {
     grid-area: footer;
-    background-color: #ededf5;
 }
-
+.foot {
+    background-color: #ededf5
+}
 .topline {
     background-color: #1f1f56;
     padding: 17px 0;
@@ -95,16 +96,16 @@ footer {
 }
 
 .menu {
+    gap: 26px;
+}
+
+.menu a {
+    text-decoration: none;
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 1.7em;
     color: #b1b1d2;
     list-style: none;
-    gap: 26px;
-}
-
-.menu li>a {
-    text-decoration: none;
 }
 
 .menu>li>a:hover {
@@ -124,9 +125,8 @@ footer {
 .skype {
     font-size: 16px;
     line-height: 1.5em;
-    text-decoration: underline;
+    text-decoration: none;
     color: #25252c;
-    font-family: "Arial";
 }
 
 .mail {
@@ -176,6 +176,7 @@ footer {
     color: #fff;
     font-weight: 700;
     font-family: "Roboto Slab";
+    padding-top: 59px;
 }
 
 .main_text {
@@ -201,8 +202,17 @@ footer {
     line-height: 1em;
     color: #fd8300;
     font-weight: bold;
+    padding-bottom: 40px;
 }
 
+.main_image>sup {
+    font-size: 20px;
+    color: #fd8300;
+}
+.padding {
+    padding-top: 23px;
+    padding-bottom: 47px;
+}
 h3 {
     font-size: 24px;
     line-height: 1em;
@@ -214,12 +224,11 @@ h3 {
 
 h1 {
     font-family: "Roboto Slab";
-    padding: 42px 0 28px;
+    padding: 0px 0 28px;
 }
 
 .first {
     padding-bottom: 20px;
-    letter-spacing: 1px;
 }
 
 .detail {
@@ -234,11 +243,10 @@ h1 {
     padding: 25px 0 34px;
 }
 
-.hr {
+hr {
     width: 713px;
     height: 1px;
     background-color: #e4e4ec;
-    padding: ;
 }
 
 
@@ -292,7 +300,6 @@ h1 {
     font-size: 14px;
     line-height: 1.8em;
     color: #666;
-    font-family: "Arial";
     list-style: none;
 }
 
@@ -339,24 +346,43 @@ path {
     background-color: #e4e4ec;
 }
 
+.sidemenu a {
+    background-color: #e4e4ec;
+    border-radius: 3px;
+    
+}
+.sidemenu li>a:hover {
+    color: #666;
+    background-color: #cecedd;
+    transition: all 1s ease;
+}
+.sidemenu li:hover {
+    background-color: #cecedd;
+    transition: all 1s ease;
+
+}
 .asside {
     background-color: #e4e4ec;
     border-radius: 3px;
 }
-
+.asside > li {
+    border-bottom:1px solid #666;
+}
 .asside>li>a:hover {
     display: block;
     padding: 10px 10px;
     background-color: #fd8300;
     transition: all .5s ease;
     color: #fff;
+
 }
 
 .asside li:hover .sidemenu {
     display: block;
     box-shadow: inset 0px -1px 0px #cecedd;
-    background-color: #e4e4ec;
+    
 }
+
 .asside a::before {
     content: "";
     position: absolute;
@@ -369,9 +395,11 @@ path {
     border-right: 2px solid #666;
     transform: translateY(-50%) rotate(45deg);
 }
-.asside li:hover > a::before {
+
+.asside li:hover>a::before {
     transform: translateY(-50%) rotate(135deg);
 }
+
 .build a {
     position: relative;
 }
@@ -424,6 +452,7 @@ path {
 
 .tel {
     padding-left: 17px;
+
 }
 
 .text_mail {
@@ -458,12 +487,17 @@ path {
     color: #fd8300;
 }
 
-.bottom {
-    padding: 41px;
-}
+
 
 figure p {
     font-size: 13px;
     line-height: 1.4em;
     color: #9999a6;
+}
+
+
+.gap {
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
