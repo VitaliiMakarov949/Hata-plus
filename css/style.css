@@ -83,9 +83,11 @@ aside {
 footer {
     grid-area: footer;
 }
+
 .foot {
     background-color: #ededf5
 }
+
 .topline {
     background-color: #1f1f56;
     padding: 17px 0;
@@ -118,25 +120,31 @@ footer {
     line-height: 1.3em;
     color: #25252c;
     font-weight: bold;
-    font-family: "Arial";
-    text-decoration: none;
 }
-
+.number > img {
+    margin-right: 11px;
+}
+.number1 {
+    margin-left: 28px;
+}
 .skype {
     font-size: 16px;
     line-height: 1.5em;
     text-decoration: none;
     color: #25252c;
 }
-
+.skype>img {
+    margin-right: 11px;
+}
 .mail {
     font-size: 16px;
     line-height: 1.5em;
     text-decoration: underline;
     color: #25252c;
-
 }
-
+.mail>img {
+    margin-right: 11px;
+}
 .button {
     border-radius: 25px;
     border-width: 2px;
@@ -209,10 +217,12 @@ footer {
     font-size: 20px;
     color: #fd8300;
 }
+
 .padding {
     padding-top: 23px;
     padding-bottom: 47px;
 }
+
 h3 {
     font-size: 24px;
     line-height: 1em;
@@ -256,7 +266,6 @@ hr {
     color: #1f1f56;
     font-weight: bold;
     text-decoration: none;
-    font-family: "Arial";
 }
 
 .text {
@@ -264,7 +273,6 @@ hr {
     font-size: 13px;
     line-height: 1.3em;
     color: #9999a6;
-    font-family: "Arial";
 }
 
 .description {
@@ -341,6 +349,10 @@ path {
     position: relative;
 }
 
+.asside>a {
+    padding: 16px 15px;
+}
+
 .sidemenu {
     display: none;
     background-color: #e4e4ec;
@@ -349,25 +361,29 @@ path {
 .sidemenu a {
     background-color: #e4e4ec;
     border-radius: 3px;
-    
 }
+
 .sidemenu li>a:hover {
     color: #666;
     background-color: #cecedd;
     transition: all 1s ease;
 }
+
 .sidemenu li:hover {
     background-color: #cecedd;
     transition: all 1s ease;
 
 }
+
 .asside {
     background-color: #e4e4ec;
     border-radius: 3px;
 }
-.asside > li {
-    border-bottom:1px solid #666;
+
+.asside>li {
+    border-bottom: 1px solid #666;
 }
+
 .asside>li>a:hover {
     display: block;
     padding: 10px 10px;
@@ -380,10 +396,10 @@ path {
 .asside li:hover .sidemenu {
     display: block;
     box-shadow: inset 0px -1px 0px #cecedd;
-    
+
 }
 
-.asside a::before {
+.asside>a::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -443,16 +459,8 @@ path {
     align-items: center;
 }
 
-
-
 .skype_mail {
     padding: 36px 51px;
-}
-
-
-.tel {
-    padding-left: 17px;
-
 }
 
 .text_mail {
