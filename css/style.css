@@ -82,6 +82,7 @@ aside {
 
 footer {
     grid-area: footer;
+    background-color: #ededf5;
 }
 
 .foot {
@@ -121,30 +122,37 @@ footer {
     color: #25252c;
     font-weight: bold;
 }
-.number > img {
+
+.number>img {
     margin-right: 11px;
 }
+
 .number1 {
     margin-left: 28px;
 }
+
 .skype {
     font-size: 16px;
     line-height: 1.5em;
     text-decoration: none;
     color: #25252c;
 }
+
 .skype>img {
     margin-right: 11px;
 }
+
 .mail {
     font-size: 16px;
     line-height: 1.5em;
     text-decoration: underline;
     color: #25252c;
 }
+
 .mail>img {
     margin-right: 11px;
 }
+
 .button {
     border-radius: 25px;
     border-width: 2px;
@@ -508,4 +516,8 @@ figure p {
     display: flex;
     align-items: center;
     gap: 2px;
+}
+
+.bottom {
+    padding: 41px 30px;
 }
