@@ -123,8 +123,10 @@ footer {
     color: #25252c;
     font-weight: bold;
 }
-.number a:hover {
-    color: #25252c;
+.number:hover {
+    color: #fd8300;
+    transition: all .5s ease;
+    text-decoration: underline;
 }
 .number>img {
     margin-right: 11px;
