@@ -59,7 +59,6 @@ ul {
 
 header {
     grid-area: header;
-
 }
 
 .wrapper {
@@ -92,7 +91,8 @@ footer {
     left: 0%;
     width: 100%;
     background-color: #1f1f56;
-    padding: 17px 0;
+    padding: 27px 0 27px;
+
 }
 
 .top {
@@ -142,7 +142,10 @@ footer {
     text-decoration: none;
     color: #25252c;
 }
-
+.skype:hover {
+    color: #fd8300;
+    transition: all .5s ease;
+}
 .skype>img {
     margin-right: 11px;
 }
@@ -153,7 +156,10 @@ footer {
     text-decoration: underline;
     color: #25252c;
 }
-
+.mail:hover {
+    color: #fd8300;
+    transition: all .5s ease; 
+}
 .mail>img {
     margin-right: 11px;
 }
@@ -348,6 +354,7 @@ path {
 
 .icon-link:hover path {
     fill: #fd8300;
+    transition: all .5s ease;
 }
 
 .second>h2 {
