@@ -64,7 +64,7 @@ header {
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 
 
 }
 
@@ -91,7 +91,7 @@ footer {
     left: 0%;
     width: 100%;
     background-color: #1f1f56;
-    padding: 27px 0 27px;
+    padding: 27px 0;
 
 }
 
@@ -365,22 +365,19 @@ path {
     color: #fff;
     font-weight: 700;
     font-family: "Roboto Slab";
-    border-radius: 3px;
     background-color: #1f1f56;
     padding: 13px 15px;
 }
 
 .asside a {
     display: block;
-    padding: 16px 14px;
+    padding: 16px 18px;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7em;
     color: #25252c;
     background-color: #e4e4ec;
     position: relative;
 }
-
-
 
 .sidemenu {
     display: none;
@@ -389,7 +386,6 @@ path {
 
 .sidemenu a {
     background-color: #e4e4ec;
-    border-radius: 3px;
 }
 
 .sidemenu li>a:hover {
@@ -401,7 +397,7 @@ path {
 .sidemenu li:hover {
     background-color: #cecedd;
     transition: all 1s ease;
-
+    
 }
 
 .asside {
@@ -410,7 +406,7 @@ path {
 }
 
 .asside>li {
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #cecedd;
 }
 
 .asside>li>a:hover {
@@ -419,13 +415,12 @@ path {
     background-color: #fd8300;
     transition: all .5s ease;
     color: #fff;
-
+    
 }
 
 .asside li:hover .sidemenu {
     display: block;
     box-shadow: inset 0px -1px 0px #cecedd;
-
 }
 
 .asside>li>a::before {
@@ -443,10 +438,16 @@ path {
 
 .asside li:hover>a::before {
     transform: translateY(-50%) rotate(135deg);
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
 }
-
+.asside >li:hover >a {
+    background-color: #fd8300;
+    color: #fff;
+}
 .sibemenu a::before {
     content: none;
+    
 }
 
 .build a {
@@ -482,6 +483,7 @@ path {
     color: #9999a6;
     text-align: center;
     background-color: #dcdce6;
+    padding: 15px;
 }
 
 .column {
