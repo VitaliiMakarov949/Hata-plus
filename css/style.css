@@ -59,13 +59,7 @@ ul {
 
 header {
     grid-area: header;
-    
-}
 
-
-
-.sidebar li {
-    padding: 16px 14px;
 }
 
 .wrapper {
@@ -129,7 +123,9 @@ footer {
     color: #25252c;
     font-weight: bold;
 }
-
+.number a:hover {
+    color: #25252c;
+}
 .number>img {
     margin-right: 11px;
 }
@@ -259,9 +255,15 @@ h1 {
 .detail {
     font-size: 14px;
     line-height: 1.7em;
-    text-decoration: underline;
-    color: #fd8300;
+    text-decoration: none;
+    color: #25252c;
     font-weight: bold;
+}
+
+.detail:hover {
+    color: #fd8300;
+    transition: all .5s ease;
+    text-decoration: underline;
 }
 
 .more {
@@ -269,9 +271,8 @@ h1 {
 }
 
 hr {
-    width: 713px;
-    height: 1px;
-    background-color: #e4e4ec;
+    border: none;
+    border: 1px solid #9999a6;
 }
 
 
@@ -310,7 +311,9 @@ hr {
     list-style: none;
     text-decoration: none;
 }
-
+.sidebars a{
+    color: #666;
+}
 .sidebar li>a:hover {
     color: #fd8300;
     transition: all .5s ease;
@@ -329,7 +332,7 @@ hr {
 .contacts a {
     transition: all .5s ease;
     text-decoration: none;
-
+    color: #666;
 }
 
 .contacts a:hover {
@@ -358,15 +361,15 @@ path {
 
 .asside a {
     display: block;
-    margin: 0;
-    padding: 0;
+    padding: 16px 14px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #25252c;
     background-color: #e4e4ec;
     position: relative;
 }
 
-.asside>a {
-    padding: 16px 15px;
-}
+
 
 .sidemenu {
     display: none;
@@ -414,7 +417,7 @@ path {
 
 }
 
-.asside>a::before {
+.asside>li>a::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -429,6 +432,10 @@ path {
 
 .asside li:hover>a::before {
     transform: translateY(-50%) rotate(135deg);
+}
+
+.sibemenu a::before {
+    content: none;
 }
 
 .build a {
