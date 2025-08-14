@@ -35,7 +35,9 @@
     box-sizing: border-box;
 
 }
-
+html {
+    
+}
 body {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -367,6 +369,7 @@ path {
     font-family: "Roboto Slab";
     background-color: #1f1f56;
     padding: 13px 15px;
+    border-radius: 2px 2px 0 0;
 }
 
 .asside a {
@@ -411,7 +414,6 @@ path {
 
 .asside>li>a:hover {
     display: block;
-    padding: 15px 15px;
     background-color: #fd8300;
     transition: all .5s ease;
     color: #fff;
@@ -538,10 +540,32 @@ figure p {
 }
 
 .bottom {
-    padding: 41px 30px;
+    padding: 41px 0;
 }
 
 .pose {
     position: sticky;
     top: 60px;
+}
+
+@media screen and (min-width: 768px)  {
+      
+}
+
+@media screen and (min-width: 1024px)  {
+      
+}
+
+@media screen and (min-width: 1440px)  {
+       
+}
+
+@media screen and (min-width: 1920px)  {
+    html {
+        font-size: 1.2px;
+    }    
+}
+
+@media screen and (min-width: 2200px)  {
+      
 }
