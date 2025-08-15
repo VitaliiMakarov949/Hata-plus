@@ -285,10 +285,10 @@ hr {
     border: 1px solid #e4e4ec;
 }
 
-.build a {
+.build h3 {
     color: #1f1f56;
 }
-.build {
+figcaption h3 {
     font-size: 14px;
     line-height: 1.7em;
     color: #1f1f56;
@@ -452,11 +452,11 @@ path {
     
 }
 
-.build a {
+figcaption h4 {
     position: relative;
 }
 
-.build a::before {
+figcaption a > h4::before {
     content: "";
     position: absolute;
     left: 0;
@@ -467,11 +467,11 @@ path {
     transition: all .5s ease;
 }
 
-.build a:hover {
+h4 :hover {
     color: #1f1f56;
 }
 
-.build a:hover::before {
+h4:hover::before {
     width: 100%;
 }
 
@@ -547,7 +547,19 @@ figure p {
     position: sticky;
     top: 60px;
 }
+figure {
+    max-width: 220px;
+}
+figcaption picture{
+    width: 100%;
+}
+figcaption {
+    position: relative;
+}
 
+figcaption a {
+    position: absolute;
+}
 @media screen and (min-width: 768px)  {
       
 }
