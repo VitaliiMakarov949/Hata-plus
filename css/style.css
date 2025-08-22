@@ -380,6 +380,7 @@ path {
     color: #25252c;
     background-color: #e4e4ec;
     position: relative;
+    border-radius: 0 0 10px 10px;
 }
 
 .sidemenu {
@@ -411,7 +412,11 @@ path {
 .asside>li {
     border-bottom: 1px solid #cecedd;
 }
+.asside>li:last-child {
+    border-bottom: none;
+    
 
+}
 .asside>li>a:hover {
     display: block;
     background-color: #fd8300;
@@ -454,25 +459,37 @@ path {
 
 figcaption h4 {
     position: relative;
+    color: #1f1f56;
+    transition: color .5s ease;
 }
 
-figcaption a > h4::before {
+figcaption h4::before {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -2px;
     width: 0;
-    height: 1px;
+    height: 2px;
     background-color: #1f1f56;
-    transition: all .5s ease;
+    transition:  .5s ease;
 }
-
-h4 :hover {
+h4 {
+    color: #1f1f56;
+}
+h4 a :hover {
     color: #1f1f56;
 }
 
-h4:hover::before {
+figcaption h4:hover::before {
     width: 100%;
+}
+figure picture img {
+    width: 100%;
+    height: auto;
+    transition:  .5s ease;
+}
+figure:hover picture img {
+    transform: scale(1.05);
 }
 
 .build p {
