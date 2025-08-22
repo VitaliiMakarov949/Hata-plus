@@ -380,7 +380,7 @@ path {
     color: #25252c;
     background-color: #e4e4ec;
     position: relative;
-    border-radius: 0 0 10px 10px;
+    
 }
 
 .sidemenu {
@@ -406,7 +406,7 @@ path {
 
 .asside {
     background-color: #e4e4ec;
-    border-radius: 3px;
+    
 }
 
 .asside>li {
@@ -441,6 +441,7 @@ path {
     border-top: 2px solid #666;
     border-right: 2px solid #666;
     transform: translateY(-50%) rotate(45deg);
+    
 }
 
 .asside li:hover>a::before {
