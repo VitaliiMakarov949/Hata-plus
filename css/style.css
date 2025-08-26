@@ -35,9 +35,9 @@
     box-sizing: border-box;
 
 }
-html {
-    
-}
+
+html {}
+
 body {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -66,8 +66,7 @@ header {
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 
-
+    padding: 0
 }
 
 main {
@@ -93,7 +92,7 @@ footer {
     left: 0%;
     width: 100%;
     background-color: #1f1f56;
-    padding: 27px 0;
+    padding: 15px 0;
 
 }
 
@@ -125,11 +124,13 @@ footer {
     color: #25252c;
     font-weight: bold;
 }
+
 .number:hover {
     color: #fd8300;
     transition: all .5s ease;
     text-decoration: underline;
 }
+
 .number>img {
     margin-right: 11px;
 }
@@ -144,10 +145,12 @@ footer {
     text-decoration: none;
     color: #25252c;
 }
+
 .skype:hover {
     color: #fd8300;
     transition: all .5s ease;
 }
+
 .skype>img {
     margin-right: 11px;
 }
@@ -158,10 +161,12 @@ footer {
     text-decoration: underline;
     color: #25252c;
 }
+
 .mail:hover {
     color: #fd8300;
-    transition: all .5s ease; 
+    transition: all .5s ease;
 }
+
 .mail>img {
     margin-right: 11px;
 }
@@ -239,6 +244,10 @@ footer {
     color: #fd8300;
 }
 
+sup {
+    font-size: 10px;
+}
+
 .padding {
     padding-top: 23px;
     padding-bottom: 47px;
@@ -288,6 +297,7 @@ hr {
 .build h3 {
     color: #1f1f56;
 }
+
 figcaption h3 {
     font-size: 14px;
     line-height: 1.7em;
@@ -319,13 +329,15 @@ figcaption h3 {
 .sidebar {
     min-width: 219px;
     font-size: 14px;
-    line-height: 1, 7em;
+    line-height: 1.7em;
     list-style: none;
     text-decoration: none;
 }
-.sidebars a{
+
+.sidebars a {
     color: #666;
 }
+
 .sidebar li>a:hover {
     color: #fd8300;
     transition: all .5s ease;
@@ -374,13 +386,13 @@ path {
 
 .asside a {
     display: block;
-    padding: 16px 18px;
+    padding: 16px 15px;
     font-size: 14px;
     line-height: 1.7em;
     color: #25252c;
-    background-color: #e4e4ec;
-    position: relative;
     
+    position: relative;
+
 }
 
 .sidemenu {
@@ -406,23 +418,25 @@ path {
 
 .asside {
     background-color: #e4e4ec;
-    
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
 }
 
 .asside>li {
     border-bottom: 1px solid #cecedd;
-}
-.asside>li:last-child {
-    border-bottom: none;
-    
+    background-color: #e4e4ec;
 
 }
+
+.asside>li:last-child {
+    border-bottom: none;
+
+}
+
 .asside>li>a:hover {
     display: block;
-    background-color: #fd8300;
     transition: all .5s ease;
-    color: #fff;
-    
+
 }
 
 .asside li:hover .sidemenu {
@@ -441,7 +455,7 @@ path {
     border-top: 2px solid #666;
     border-right: 2px solid #666;
     transform: translateY(-50%) rotate(45deg);
-    
+
 }
 
 .asside li:hover>a::before {
@@ -449,13 +463,15 @@ path {
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
 }
-.asside >li:hover >a {
+
+.asside>li:hover>a {
     background-color: #fd8300;
     color: #fff;
 }
+
 .sibemenu a::before {
     content: none;
-    
+
 }
 
 figcaption h4 {
@@ -472,11 +488,13 @@ figcaption h4::before {
     width: 0;
     height: 2px;
     background-color: #1f1f56;
-    transition:  .5s ease;
+    transition: .5s ease;
 }
+
 h4 {
     color: #1f1f56;
 }
+
 h4 a :hover {
     color: #1f1f56;
 }
@@ -484,11 +502,13 @@ h4 a :hover {
 figcaption h4:hover::before {
     width: 100%;
 }
+
 figure picture img {
     width: 100%;
     height: auto;
-    transition:  .5s ease;
+    transition: .5s ease;
 }
+
 figure:hover picture img {
     transform: scale(1.05);
 }
@@ -565,12 +585,15 @@ figure p {
     position: sticky;
     top: 60px;
 }
+
 figure {
     max-width: 220px;
 }
-figcaption picture{
+
+figcaption picture {
     width: 100%;
 }
+
 figcaption {
     position: relative;
 }
@@ -578,24 +601,17 @@ figcaption {
 figcaption a {
     position: absolute;
 }
-@media screen and (min-width: 768px)  {
-      
-}
 
-@media screen and (min-width: 1024px)  {
-      
-}
+@media screen and (min-width: 768px) {}
 
-@media screen and (min-width: 1440px)  {
-       
-}
+@media screen and (min-width: 1024px) {}
 
-@media screen and (min-width: 1920px)  {
+@media screen and (min-width: 1440px) {}
+
+@media screen and (min-width: 1920px) {
     html {
         font-size: 1.2px;
-    }    
+    }
 }
 
-@media screen and (min-width: 2200px)  {
-      
-}
+@media screen and (min-width: 2200px) {}
