@@ -36,7 +36,9 @@
 
 }
 
-html {}
+html {
+    font-size: 1px;
+}
 
 body {
     display: grid;
@@ -64,7 +66,7 @@ header {
 }
 
 .wrapper {
-    max-width: 960px;
+    max-width: 960rem;
     margin: 0 auto;
     padding: 0
 }
@@ -92,21 +94,21 @@ footer {
     left: 0%;
     width: 100%;
     background-color: #1f1f56;
-    padding: 15px 0 15px;
+    padding: 15rem 0 15rem;
 }
 
 .top {
-    padding: 80px 0 29px;
+    padding: 80rem 0 29rem;
 }
 
 .menu {
-    gap: 26px;
+    gap: 26rem;
 }
 
 .menu a {
     text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 2px;
+    font-size: 14rem;
+    letter-spacing: 2rem;
     line-height: 1.7em;
     color: #b1b1d2;
     list-style: none;
@@ -118,7 +120,7 @@ footer {
 }
 
 .number {
-    font-size: 18px;
+    font-size: 18rem;
     line-height: 1.3em;
     color: #25252c;
     font-weight: bold;
@@ -131,15 +133,15 @@ footer {
 }
 
 .number>img {
-    margin-right: 11px;
+    margin-right: 11rem;
 }
 
 .number1 {
-    margin-left: 28px;
+    margin-left: 28rem;
 }
 
 .skype {
-    font-size: 16px;
+    font-size: 16rem;
     line-height: 1.5em;
     text-decoration: none;
     color: #25252c;
@@ -151,11 +153,11 @@ footer {
 }
 
 .skype>img {
-    margin-right: 11px;
+    margin-right: 11rem;
 }
 
 .mail {
-    font-size: 16px;
+    font-size: 16rem;
     line-height: 1.5em;
     text-decoration: underline;
     color: #25252c;
@@ -167,15 +169,15 @@ footer {
 }
 
 .mail>img {
-    margin-right: 11px;
+    margin-right: 11rem;
 }
 
 .button {
-    border-radius: 25px;
-    border-width: 2px;
+    border-radius: 25rem;
+    border-width: 2rem;
     background-color: #fff;
-    border: 2px solid #fd8300;
-    padding: 15px 23px;
+    border: 2rem solid #fd8300;
+    padding: 15rem 23rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,7 +197,7 @@ footer {
 
 .main_image {
     max-width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
     background-image: url(../img/Rectangle.png);
     background-size: cover;
     background-position: center;
@@ -203,18 +205,18 @@ footer {
 }
 
 .h2main {
-    font-size: 30px;
-    letter-spacing: 2px;
+    font-size: 30rem;
+    letter-spacing: 2rem;
     text-transform: uppercase;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    padding-top: 40px;
+    padding-top: 40rem;
     text-align: left;
 }
 
 .main_text {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #fff;
     text-align: center;
@@ -226,53 +228,53 @@ footer {
 }
 
 .price {
-    font-size: 40px;
+    font-size: 40rem;
     color: #fd8300;
     font-weight: bold;
 }
 
 .metter {
-    font-size: 24px;
+    font-size: 24rem;
     line-height: 1em;
     color: #fd8300;
     font-weight: bold;
-    padding-bottom: 40px;
+    padding-bottom: 40rem;
 }
 
 .main_image>sup {
-    font-size: 20px;
+    font-size: 20rem;
     color: #fd8300;
 }
 
 sup {
-    font-size: 10px;
+    font-size: 10rem;
 }
 
 .padding {
-    padding-top: 23px;
-    padding-bottom: 47px;
+    padding-top: 23rem;
+    padding-bottom: 47rem;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 24rem;
     line-height: 1em;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    padding: 31px 0 25px;
+    padding: 31rem 0 25rem;
 }
 
 h1 {
     font-family: "Roboto Slab";
-    padding: 0px 0 28px;
+    padding: 0rem 0 28rem;
 }
 
 .first {
-    padding-bottom: 20px;
+    padding-bottom: 20rem;
 }
 
 .detail {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     text-decoration: none;
     color: #25252c;
@@ -286,12 +288,12 @@ h1 {
 }
 
 .more {
-    padding: 25px 0 34px;
+    padding: 25rem 0 34rem;
 }
 
 hr {
     border: none;
-    border: 1px solid #e4e4ec;
+    border: 1rem solid #e4e4ec;
 }
 
 .build h3 {
@@ -299,7 +301,7 @@ hr {
 }
 
 figcaption h3 {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #1f1f56;
     font-weight: bold;
@@ -307,15 +309,15 @@ figcaption h3 {
 }
 
 .text {
-    max-width: 220px;
-    font-size: 13px;
+    max-width: 220rem;
+    font-size: 13rem;
     line-height: 1.3em;
     color: #9999a6;
 }
 
 .description {
-    max-width: 677px;
-    font-size: 14px;
+    max-width: 677rem;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #666;
 
@@ -327,8 +329,8 @@ figcaption h3 {
 }
 
 .sidebar {
-    min-width: 219px;
-    font-size: 14px;
+    min-width: 219rem;
+    font-size: 14rem;
     line-height: 1.7em;
     list-style: none;
     text-decoration: none;
@@ -347,7 +349,7 @@ figcaption h3 {
 
 
 .contacts {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.8em;
     color: #666;
     list-style: none;
@@ -374,20 +376,20 @@ path {
 }
 
 .second>h2 {
-    font-size: 16px;
+    font-size: 16rem;
     line-height: 1.5em;
     color: #fff;
     font-weight: 700;
     font-family: "Roboto Slab";
     background-color: #1f1f56;
-    padding: 13px 15px;
-    border-radius: 2px 2px 0 0;
+    padding: 13rem 15rem;
+    border-radius: 2rem 2rem 0 0;
 }
 
 .asside a {
     display: block;
-    padding: 16px 25px 14px 15px;
-    font-size: 14px;
+    padding: 16rem 25rem 14rem 15rem;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #25252c;
     position: relative;
@@ -417,12 +419,12 @@ path {
 
 .asside {
     background-color: #e4e4ec;
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3rem 3rem;
     overflow: hidden;
 }
 
 .asside>li {
-    border-bottom: 1px solid #cecedd;
+    border-bottom: 1rem solid #cecedd;
     background-color: #e4e4ec;
 
 }
@@ -440,24 +442,24 @@ path {
 
 .asside li:hover .sidemenu {
     display: block;
-    box-shadow: inset 0px -1px 0px #cecedd;
+    box-shadow: inset 0rem -1rem 0rem #cecedd;
 }
 
 .asside>li>a::before {
     content: "";
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 10rem;
     display: block;
-    width: 8px;
-    height: 8px;
-    border-top: 2px solid #666;
-    border-right: 2px solid #666;
+    width: 8rem;
+    height: 8rem;
+    border-top: 2rem solid #666;
+    border-right: 2rem solid #666;
     transform: translateY(-50%) rotate(45deg);
 
 }
 menu {
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3rem 3rem;
 }
 
 
@@ -469,40 +471,40 @@ menu {
 
 .menu li:hover .sidemenu {
     display: block;
-    box-shadow: inset 0px -1px 0px #cecedd;
+    box-shadow: inset 0rem -1rem 0rem #cecedd;
 }
 
 .sidemenu>li>a::before {
     content: "";
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 10rem;
     display: block;
-    width: 8px;
-    height: 8px;
-    border-top: 2px solid #666;
-    border-right: 2px solid #666;
+    width: 8rem;
+    height: 8rem;
+    border-top: 2rem solid #666;
+    border-right: 2rem solid #666;
     transform: translateY(-50%) rotate(45deg);
 
 }
 .menu a {
     display: block;
-    padding: 16px 15px 14px 15px;
-    font-size: 14px;
+    padding: 16rem 15rem 14rem 15rem;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #b1b1d2;
     position: relative;
 }
 .menu li:hover>a::before {
     transform: translateY(-50%) rotate(135deg);
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-top: 2rem solid #fff;
+    border-right: 2rem solid #fff;
 }
 
 .asside li:hover>a::before {
     transform: translateY(-50%) rotate(135deg);
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-top: 2rem solid #fff;
+    border-right: 2rem solid #fff;
 }
 
 .asside>li:hover>a {
@@ -525,9 +527,9 @@ figcaption h4::before {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -2rem;
     width: 0;
-    height: 2px;
+    height: 2rem;
     background-color: #1f1f56;
     transition: .5s ease;
 }
@@ -559,16 +561,16 @@ figure:hover picture img {
 }
 
 .copy {
-    font-size: 13px;
+    font-size: 13rem;
     line-height: 1.3em;
     color: #9999a6;
     text-align: center;
     background-color: #dcdce6;
-    padding: 15px;
+    padding: 15rem;
 }
 
 .column {
-    column-gap: 24px;
+    column-gap: 24rem;
 }
 
 .items_center {
@@ -576,28 +578,28 @@ figure:hover picture img {
 }
 
 .skype_mail {
-    padding: 36px 51px;
+    padding: 36rem 51rem;
 }
 
 .text_mail {
-    padding: 41px 12px;
+    padding: 41rem 12rem;
 }
 
 .icon_phone {
-    padding: 33px 11px;
+    padding: 33rem 11rem;
 }
 
 .phone_number {
-    padding: 36px 11px;
+    padding: 36rem 11rem;
 }
 
 .words {
-    padding: 12px 0 16px;
+    padding: 12rem 0 16rem;
     text-align: left;
 }
 
 .sidebars {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.8em;
     color: #666;
 }
@@ -614,22 +616,22 @@ figure:hover picture img {
 
 
 figure p {
-    font-size: 13px;
+    font-size: 13rem;
     line-height: 1.4em;
     color: #9999a6;
 }
 
 .bottom {
-    padding: 41px 0;
+    padding: 41rem 0;
 }
 
 .pose {
     position: sticky;
-    top: 60px;
+    top: 60rem;
 }
 
 figure {
-    max-width: 220px;
+    max-width: 220rem;
 }
 
 figcaption picture {
@@ -643,115 +645,12 @@ figcaption {
 figcaption a {
     position: absolute;
 }
-@font-face {
-    font-family: 'Roboto Slab';
-    src: url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
-        url('../fonts/RobotoSlab-Regular.woff') format('woff'),
-        url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: 'Roboto Slab';
-    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
-        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
-        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto Slab';
-    src: url('../fonts/RobotoSlab-Medium.woff2') format('woff2'),
-        url('../fonts/RobotoSlab-Medium.woff') format('woff'),
-        url('../fonts/RobotoSlab-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-html {}
-
-body {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-        "header header header"
-        "content content content"
-        "footer footer footer";
-    font-family: "Arial";
-    cursor: url(../img/cursor.cur), default;
-}
-
-a {
-    cursor: url(../img/cursor1.cur), default;
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-header {
-    grid-area: header;
-}
-
-.wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0
-}
-
-main {
-    grid-area: content;
-}
-
-aside {
-    grid-area: aside;
-}
-
-footer {
-    grid-area: footer;
-    background-color: #ededf5;
-}
-
-.foot {
-    background-color: #ededf5
-}
-
-.topline {
-    position: fixed;
-    top: 0;
-    left: 0%;
-    width: 100%;
-    background-color: #1f1f56;
-    padding: 15px 0 5px;
-}
-
-.top {
-    padding: 110px 0 29px;
-}
-
-.menu {
-    gap: 26px;
-}
 
 .menu a {
     text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 2px;
+    font-size: 14rem;
+    letter-spacing: 2rem;
     line-height: 1.7em;
     color: #b1b1d2;
     list-style: none;
@@ -763,7 +662,7 @@ footer {
 }
 
 .number {
-    font-size: 18px;
+    font-size: 18rem;
     line-height: 1.3em;
     color: #25252c;
     font-weight: bold;
@@ -776,15 +675,15 @@ footer {
 }
 
 .number>img {
-    margin-right: 11px;
+    margin-right: 11rem;
 }
 
 .number1 {
-    margin-left: 28px;
+    margin-left: 28rem;
 }
 
 .skype {
-    font-size: 16px;
+    font-size: 16rem;
     line-height: 1.5em;
     text-decoration: none;
     color: #25252c;
@@ -796,11 +695,11 @@ footer {
 }
 
 .skype>img {
-    margin-right: 11px;
+    margin-right: 11rem;
 }
 
 .mail {
-    font-size: 16px;
+    font-size: 16rem;
     line-height: 1.5em;
     text-decoration: underline;
     color: #25252c;
@@ -812,15 +711,15 @@ footer {
 }
 
 .mail>img {
-    margin-right: 11px;
+    margin-right: 11rem;
 }
 
 .button {
-    border-radius: 25px;
-    border-width: 2px;
+    border-radius: 25rem;
+    border-width: 2rem;
     background-color: #fff;
-    border: 2px solid #fd8300;
-    padding: 15px 23px;
+    border: 2rem solid #fd8300;
+    padding: 15rem 23rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -846,13 +745,13 @@ footer {
 .cottages th {
     background-color: #1d2a5c;
     color: #fff;
-    padding: 12px;
+    padding: 12rem;
 }
 
 .cottages td {
     background-color: #f2f2f2;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 10rem;
+    border: 1rem solid #ddd;
     color: #666;
 }
 
@@ -863,28 +762,28 @@ footer {
 }
 
 .time {
-    font-size: 13px;
+    font-size: 13rem;
     line-height: 1.6em;
     color: #666;
-    padding: 27px 0 0;
+    padding: 27rem 0 0;
 }
 .time2 {
-    font-size: 13px;
+    font-size: 13rem;
     line-height: 1.6em;
     color: #666;
 }
 
 
 .mainword {
-    font-size: 24px;
+    font-size: 24rem;
     color: #fff;
     font-weight: 700;
     font-family: "Roboto Slab";
-    padding-top: 59px;
+    padding-top: 59rem;
 }
 
 .main_text {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #666;
 }
@@ -895,53 +794,53 @@ footer {
 }
 
 .price {
-    font-size: 40px;
+    font-size: 40rem;
     color: #fd8300;
     font-weight: bold;
 }
 
 .metter {
-    font-size: 24px;
+    font-size: 24rem;
     line-height: 1em;
     color: #fd8300;
     font-weight: bold;
-    padding-bottom: 40px;
+    padding-bottom: 40rem;
 }
 
 .main_image>sup {
-    font-size: 20px;
+    font-size: 20rem;
     color: #fd8300;
 }
 
 sup {
-    font-size: 10px;
+    font-size: 10rem;
 }
 
 .padding {
-    padding-top: 23px;
-    padding-bottom: 47px;
+    padding-top: 23rem;
+    padding-bottom: 47rem;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 24rem;
     line-height: 1em;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    padding: 31px 0 25px;
+    padding: 31rem 0 25rem;
 }
 
 h1 {
     font-family: "Roboto Slab";
-    padding: 0px 0 28px;
+    padding: 0rem 0 28rem;
 }
 
 .first {
-    padding-bottom: 20px;
+    padding-bottom: 20rem;
 }
 
 .detail {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     text-decoration: none;
     color: #25252c;
@@ -955,12 +854,12 @@ h1 {
 }
 
 .more {
-    padding: 25px 0 34px;
+    padding: 25rem 0 34rem;
 }
 
 hr {
     border: none;
-    border: 1px solid #e4e4ec;
+    border: 1rem solid #e4e4ec;
 }
 
 .build h3 {
@@ -968,7 +867,7 @@ hr {
 }
 
 figcaption h3 {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #1f1f56;
     font-weight: bold;
@@ -976,15 +875,15 @@ figcaption h3 {
 }
 
 .text {
-    max-width: 220px;
-    font-size: 13px;
+    max-width: 220rem;
+    font-size: 13rem;
     line-height: 1.3em;
     color: #9999a6;
 }
 
 .description {
-    max-width: 677px;
-    font-size: 14px;
+    max-width: 677rem;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #666;
 
@@ -996,8 +895,8 @@ figcaption h3 {
 }
 
 .sidebar {
-    min-width: 219px;
-    font-size: 14px;
+    min-width: 219rem;
+    font-size: 14rem;
     line-height: 1.7em;
     list-style: none;
     text-decoration: none;
@@ -1016,7 +915,7 @@ figcaption h3 {
 
 
 .contacts {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.8em;
     color: #666;
     list-style: none;
@@ -1043,7 +942,7 @@ path {
 }
 
 .menu {
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3rem 3rem;
 }
 
 
@@ -1055,46 +954,46 @@ path {
 
 .menu li:hover .sidemenu {
     display: block;
-    box-shadow: inset 0px -1px 0px #cecedd;
+    box-shadow: inset 0rem -1rem 0rem #cecedd;
 }
 
 .sidemenu>li>a::before {
     content: "";
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 10rem;
     display: block;
-    width: 8px;
-    height: 8px;
-    border-top: 2px solid #666;
-    border-right: 2px solid #666;
+    width: 8rem;
+    height: 8rem;
+    border-top: 2rem solid #666;
+    border-right: 2rem solid #666;
     transform: translateY(-50%) rotate(45deg);
 
 }
 
 .menu li:hover>a::before {
     transform: translateY(-50%) rotate(135deg);
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-top: 2rem solid #fff;
+    border-right: 2rem solid #fff;
 }
 
 
 
 .second>h2 {
-    font-size: 16px;
+    font-size: 16rem;
     line-height: 1.5em;
     color: #fff;
     font-weight: 700;
     font-family: "Roboto Slab";
     background-color: #1f1f56;
-    padding: 13px 15px;
-    border-radius: 2px 2px 0 0;
+    padding: 13rem 15rem;
+    border-radius: 2rem 2rem 0 0;
 }
 
 .menu a {
     display: block;
-    padding: 16px 25px 14px 15px;
-    font-size: 14px;
+    padding: 16rem 25rem 14rem 15rem;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #b1b1d2;
     position: relative;
@@ -1132,7 +1031,7 @@ path {
 
 .menu li a {
     display: block;
-    padding: 5px 10x;
+    padding: 5rem 10x;
     text-decoration: none;
 }
 
@@ -1141,7 +1040,7 @@ path {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 100px;
+    min-width: 100rem;
     background-color: #e4e4ec;
     z-index: 1000;
 }
@@ -1174,9 +1073,9 @@ figcaption h4::before {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -2rem;
     width: 0;
-    height: 2px;
+    height: 2rem;
     background-color: #1f1f56;
     transition: .5s ease;
 }
@@ -1208,16 +1107,16 @@ figure:hover picture img {
 }
 
 .copy {
-    font-size: 13px;
+    font-size: 13rem;
     line-height: 1.3em;
     color: #9999a6;
     text-align: center;
     background-color: #dcdce6;
-    padding: 15px;
+    padding: 15rem;
 }
 
 .column {
-    column-gap: 24px;
+    column-gap: 24rem;
 }
 
 .items_center {
@@ -1225,30 +1124,30 @@ figure:hover picture img {
 }
 
 .skype_mail {
-    padding: 36px 51px;
+    padding: 36rem 51rem;
 }
 
 .text_mail {
-    padding: 41px 12px;
+    padding: 41rem 12rem;
 }
 
 .icon_phone {
-    padding: 33px 11px;
+    padding: 33rem 11rem;
 }
 
 .phone_number {
-    padding: 36px 11px;
+    padding: 36rem 11rem;
 }
 
 .words1 {
-    padding: 12px 0 16px;
+    padding: 12rem 0 16rem;
     color: #fff;
 }
 .words {
-    padding: 12px 0 16px;
+    padding: 12rem 0 16rem;
 }
 .sidebars {
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.8em;
     color: #666;
 }
@@ -1265,29 +1164,44 @@ figure:hover picture img {
 
 
 figure p {
-    font-size: 13px;
+    font-size: 13rem;
     line-height: 1.4em;
     color: #9999a6;
 }
 
 .bottom {
-    padding: 41px 0;
+    padding: 41rem 0;
 }
 
 
 
 
-@media screen and (min-width: 2200px) {}
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1024px) {}
-
-@media screen and (min-width: 1440px) {}
-
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 768px) {
     html {
-        font-size: 1.2px;
+        font-size: .9px;
     }
 }
 
-@media screen and (min-width: 2200px) {}
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 1px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 1.1px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 1.7px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    html {
+        font-size: 1.9px;
+    }
+}
