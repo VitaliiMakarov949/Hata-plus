@@ -202,7 +202,7 @@ footer {
     background-repeat: no-repeat;
 }
 
-.main_text h2 {
+.h2main {
     font-size: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -741,7 +741,7 @@ footer {
 }
 
 .top {
-    padding: 80px 0 29px;
+    padding: 110px 0 29px;
 }
 
 .menu {
@@ -827,7 +827,7 @@ footer {
 }
 
 .but a {
-    color: #666;
+    color: #25252c;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -875,9 +875,9 @@ footer {
 }
 
 
-.main_text.H2Main {
+.mainword {
     font-size: 24px;
-    color: #24242b;
+    color: #fff;
     font-weight: 700;
     font-family: "Roboto Slab";
     padding-top: 59px;
@@ -1240,10 +1240,13 @@ figure:hover picture img {
     padding: 36px 11px;
 }
 
+.words1 {
+    padding: 12px 0 16px;
+    color: #fff;
+}
 .words {
     padding: 12px 0 16px;
 }
-
 .sidebars {
     font-size: 14px;
     line-height: 1.8em;
