@@ -206,7 +206,7 @@ footer {
 }
 
 .h2main {
-    font-size: 24rem;
+    font-size: rem;
     letter-spacing: 2rem;
     color: #24242b;
     font-weight: 700;
@@ -417,7 +417,64 @@ path {
     transition: all 1s ease;
 
 }
+/* Існуючі стилі для .sidemenu залишаємо, але додаємо для .sidemenus */
+.sidemenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Відкривається праворуч від батьківського елемента */
+    background-color: #e4e4ec;
+    min-width: 150px; /* Встановлюємо мінімальну ширину */
+    z-index: 1000;
+}
 
+.sidemenu li:hover .sidemenus {
+    display: block; /* Показуємо підменю при наведенні на "Собачі будки" */
+}
+
+.sidemenu a {
+    background-color: #e4e4ec;
+    padding: 10px;
+    display: block; /* Забезпечуємо правильне відображення */
+}
+
+.sidemenu li {
+    position: relative; /* Дозволяє позиціонувати sidemenus відносно цього елемента */
+}
+
+.sidemenu li:hover {
+    background-color: #cecedd;
+    transition: all 1s ease;
+}
+
+.sidemenus {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    background-color: #e4e4ec;
+    min-width: 150px;
+    z-index: 1000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.sidemenus a {
+    padding: 10px;
+    display: block;
+    color: #666;
+    text-decoration: none;
+}
+
+.sidemenus a:hover {
+    background-color: #fd8300;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.sidemenus li:hover {
+    background-color: #fd8300;
+    transition: all 0.5s ease;
+}
 .asside {
     background-color: #e4e4ec;
     border-radius: 0 0 3rem 3rem;
@@ -1047,6 +1104,10 @@ figcaption h4::before {
     background-color: #1f1f56;
     transition: .5s ease;
 }
+
+
+
+
 
 .build p {
     color: #9999a6;
