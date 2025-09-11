@@ -94,7 +94,7 @@ footer {
     left: 0%;
     width: 100%;
     background-color: #1f1f56;
-    padding: 5rem 0 15rem;
+    padding: 5rem 0 5rem;
 }
 
 .top {
@@ -206,9 +206,8 @@ footer {
 }
 
 .h2main {
-    font-size: 30rem;
+    font-size: 24rem;
     letter-spacing: 2rem;
-    text-transform: uppercase;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -491,36 +490,6 @@ menu {
 
 }
 
-.menu a {
-    display: block;
-    padding: 16rem 15rem 14rem 15rem;
-    font-size: 14rem;
-    line-height: 1.7em;
-    color: #b1b1d2;
-    position: relative;
-}
-
-.menu li:hover>a::before {
-    transform: translateY(-50%) rotate(135deg);
-    border-top: 2rem solid #fff;
-    border-right: 2rem solid #fff;
-}
-
-.asside li:hover>a::before {
-    transform: translateY(-50%) rotate(135deg);
-    border-top: 2rem solid #fff;
-    border-right: 2rem solid #fff;
-}
-
-.asside>li:hover>a {
-    background-color: #fd8300;
-    color: #fff;
-}
-
-.sibemenu a::before {
-    content: none;
-
-}
 
 figcaption h4 {
     position: relative;
@@ -734,23 +703,26 @@ figcaption a {
 }
 
 .cottages {
-    width: 65vw;
+    width: 70vw;
     border-collapse: collapse;
     text-align: center;
     font-size: 15rem;
+    border-radius: 10px;
 }
+
 
 .cottages th {
     background-color: #1d2a5c;
     color: #fff;
     padding: 12rem;
+    border: 1px solid #e0e0e0;
 }
 
 .cottages td {
     background-color: #f2f2f2;
     padding: 10rem;
-    border: 1rem solid #ddd;
     color: #666;
+    border: 1px solid #e0e0e0;
 }
 
 .cottages tr:hover td {
@@ -1027,7 +999,7 @@ path {
 
 .menu li a {
     display: block;
-    padding: 5rem 10x;
+    padding: 5rem 10rem;
     text-decoration: none;
 }
 
@@ -1075,10 +1047,6 @@ figcaption h4::before {
     background-color: #1f1f56;
     transition: .5s ease;
 }
-
-
-
-
 
 .build p {
     color: #9999a6;
