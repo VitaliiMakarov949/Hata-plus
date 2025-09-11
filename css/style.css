@@ -94,7 +94,7 @@ footer {
     left: 0%;
     width: 100%;
     background-color: #1f1f56;
-    padding: 15rem 0 15rem;
+    padding: 5rem 0 15rem;
 }
 
 .top {
@@ -181,6 +181,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 15rem;
 }
 
 .but a {
@@ -267,6 +268,7 @@ h3 {
 h1 {
     font-family: "Roboto Slab";
     padding: 0rem 0 28rem;
+    font-size: 30rem;
 }
 
 .first {
@@ -458,6 +460,7 @@ path {
     transform: translateY(-50%) rotate(45deg);
 
 }
+
 menu {
     border-radius: 0 0 3rem 3rem;
 }
@@ -487,6 +490,7 @@ menu {
     transform: translateY(-50%) rotate(45deg);
 
 }
+
 .menu a {
     display: block;
     padding: 16rem 15rem 14rem 15rem;
@@ -495,6 +499,7 @@ menu {
     color: #b1b1d2;
     position: relative;
 }
+
 .menu li:hover>a::before {
     transform: translateY(-50%) rotate(135deg);
     border-top: 2rem solid #fff;
@@ -536,6 +541,7 @@ figcaption h4::before {
 
 h4 {
     color: #1f1f56;
+    font-size: 15rem;
 }
 
 h4 a :hover {
@@ -714,16 +720,7 @@ figcaption a {
     margin-right: 11rem;
 }
 
-.button {
-    border-radius: 25rem;
-    border-width: 2rem;
-    background-color: #fff;
-    border: 2rem solid #fd8300;
-    padding: 15rem 23rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .but a {
     color: #25252c;
@@ -740,6 +737,7 @@ figcaption a {
     width: 65vw;
     border-collapse: collapse;
     text-align: center;
+    font-size: 15rem;
 }
 
 .cottages th {
@@ -767,6 +765,7 @@ figcaption a {
     color: #666;
     padding: 27rem 0 0;
 }
+
 .time2 {
     font-size: 13rem;
     line-height: 1.6em;
@@ -830,10 +829,7 @@ h3 {
     padding: 31rem 0 25rem;
 }
 
-h1 {
-    font-family: "Roboto Slab";
-    padding: 0rem 0 28rem;
-}
+
 
 .first {
     padding-bottom: 20rem;
@@ -1080,27 +1076,9 @@ figcaption h4::before {
     transition: .5s ease;
 }
 
-h4 {
-    color: #1f1f56;
-}
 
-h4 a :hover {
-    color: #1f1f56;
-}
 
-figcaption h4:hover::before {
-    width: 100%;
-}
 
-figure picture img {
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-}
-
-figure:hover picture img {
-    transform: scale(1.05);
-}
 
 .build p {
     color: #9999a6;
@@ -1143,9 +1121,11 @@ figure:hover picture img {
     padding: 12rem 0 16rem;
     color: #fff;
 }
+
 .words {
     padding: 12rem 0 16rem;
 }
+
 .sidebars {
     font-size: 14rem;
     line-height: 1.8em;
@@ -1173,9 +1153,42 @@ figure p {
     padding: 41rem 0;
 }
 
+.contact {
+    font-size: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
 
+.address {
+    font-size: 14rem;
+    line-height: 1.5em;
+    color: #666;
+}
 
-
+.phone a {
+    font-size: 18rem;
+    line-height: 1.3em;
+    color: #25252c;
+    font-weight: bold;
+}
+.mail {
+    font-size: 16px;
+line-height: 24px;
+text-decoration: underline;
+color: #25252c;
+font-family: "Arial";
+}
+.office {
+    font-size: 14rem;
+    line-height: 1.7em;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+.conect {
+    padding: ;
+}
 @media screen and (min-width: 768px) {
     html {
         font-size: .9px;
