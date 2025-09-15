@@ -397,6 +397,85 @@ path {
 
 }
 
+.menuside {
+    display: none;
+    background-color: #e4e4ec;
+    width: 100%;
+}
+
+.menuside a {
+    background-color: #e4e4ec;
+}
+
+.menuside li>a:hover {
+    color: #666;
+    background-color: #fd8300;
+    transition: all 1s ease;
+}
+
+.menuside li:hover {
+    background-color: #fd8300;
+    transition: all 1s ease;
+
+}
+
+.menuside {
+    display: none;
+    position: relative;
+    background-color: #e4e4ec;
+    min-width: 150px;
+}
+
+.asside li:hover .menuside {
+    display: block;
+}
+
+.menuside a {
+    background-color: #e4e4ec;
+    padding: 10px;
+    display: block;
+}
+
+.menuside li {
+    position: relative;
+}
+
+.menuside li:hover {
+    background-color: #cecedd;
+    transition: all 1s ease;
+}
+
+.menuside a {
+    padding: 10px;
+    display: block;
+    color: #666;
+    text-decoration: none;
+}
+
+.menuside a:hover {
+    background-color: #fd8300;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.menuside li:hover {
+    background-color: #fd8300;
+    transition: all 0.5s ease;
+}
+.asside>li>a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10rem;
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    border-top: 2rem solid #666;
+    border-right: 2rem solid #666;
+    transform: translateY(-50%) rotate(45deg);
+
+}
+
 .sidemenu {
     display: none;
     background-color: #e4e4ec;
@@ -417,29 +496,29 @@ path {
     transition: all 1s ease;
 
 }
-/* Існуючі стилі для .sidemenu залишаємо, але додаємо для .sidemenus */
+
 .sidemenu {
     display: none;
     position: absolute;
     top: 0;
-    left: 100%; /* Відкривається праворуч від батьківського елемента */
+    left: 100%;
     background-color: #e4e4ec;
-    min-width: 150px; /* Встановлюємо мінімальну ширину */
+    min-width: 150px;
     z-index: 1000;
 }
 
 .sidemenu li:hover .sidemenus {
-    display: block; /* Показуємо підменю при наведенні на "Собачі будки" */
+    display: block;
 }
 
 .sidemenu a {
     background-color: #e4e4ec;
     padding: 10px;
-    display: block; /* Забезпечуємо правильне відображення */
+    display: block;
 }
 
 .sidemenu li {
-    position: relative; /* Дозволяє позиціонувати sidemenus відносно цього елемента */
+    position: relative;
 }
 
 .sidemenu li:hover {
@@ -451,11 +530,11 @@ path {
     display: none;
     position: absolute;
     top: 0;
-    left: 100%; 
+    left: 100%;
     background-color: #e4e4ec;
     min-width: 150px;
     z-index: 1000;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .sidemenus a {
@@ -475,6 +554,7 @@ path {
     background-color: #fd8300;
     transition: all 0.5s ease;
 }
+
 .asside {
     background-color: #e4e4ec;
     border-radius: 0 0 3rem 3rem;
@@ -498,7 +578,7 @@ path {
 
 }
 
-.asside li:hover .sidemenu {
+.asside li:hover .menuside {
     display: block;
     box-shadow: inset 0rem -1rem 0rem #cecedd;
 }
@@ -775,11 +855,27 @@ figcaption a {
     border: 1px solid #e0e0e0;
 }
 
+.table_main th:first-child {
+    text-align: left;
+}
+
 .cottages td {
-    background-color: #f2f2f2;
+    background-color: #e4e4ec;
     padding: 10rem;
     color: #666;
     border: 1px solid #e0e0e0;
+}
+
+.cottages td:first-child {
+    text-align: left;
+}
+
+.cottages td:last-child {
+    text-align: right;
+}
+
+.table_main th:last-child {
+    text-align: right;
 }
 
 .cottages tr:hover td {
@@ -1201,13 +1297,15 @@ figure p {
     color: #25252c;
     font-weight: bold;
 }
+
 .mail {
     font-size: 16px;
-line-height: 24px;
-text-decoration: underline;
-color: #25252c;
-font-family: "Arial";
+    line-height: 24px;
+    text-decoration: underline;
+    color: #25252c;
+    font-family: "Arial";
 }
+
 .office {
     font-size: 14rem;
     line-height: 1.7em;
@@ -1215,50 +1313,53 @@ font-family: "Arial";
     font-weight: 700;
     font-family: "Roboto Slab";
 }
+
 .conect {
     padding: ;
 }
+
 .contact-form {
     max-width: 500px;
     margin: auto;
-  }
+}
 
-  .contact-form h3 {
+.contact-form h3 {
     font-size: 18px;
     margin-bottom: 15px;
-  }
+}
 
-  .form-row {
+.form-row {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
-  }
+}
 
-  .form-row input {
+.form-row input {
     flex: 1;
-  }
+}
 
-  input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
-  }
+}
 
-  textarea {
+textarea {
     resize: vertical;
     min-height: 100px;
-  }
+}
 
-  .form-footer {
+.form-footer {
     display: flex;
     align-items: center;
     margin-top: 10px;
     gap: 10px;
-  }
+}
 
-  button {
+button {
     background: #ff7b00;
     color: white;
     border: none;
@@ -1267,16 +1368,17 @@ font-family: "Arial";
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
-  }
+}
 
-  button:hover {
+button:hover {
     background: #e86e00;
-  }
+}
 
-  label {
+label {
     font-size: 14px;
     cursor: pointer;
-  }
+}
+
 @media screen and (min-width: 768px) {
     html {
         font-size: .9px;
