@@ -82,6 +82,7 @@ aside {
 footer {
     grid-area: footer;
     background-color: #ededf5;
+    flex-wrap: wrap;
 }
 
 .foot {
@@ -95,10 +96,12 @@ footer {
     width: 100%;
     background-color: #1f1f56;
     padding: 5rem 0 5rem;
+    flex-wrap: wrap;
 }
 
 .top {
     padding: 80rem 0 29rem;
+    flex-wrap: wrap;
 }
 
 .menu {
@@ -206,7 +209,7 @@ footer {
 }
 
 .h2main {
-    font-size: rem;
+    font-size: 30rem;
     letter-spacing: 2rem;
     color: #24242b;
     font-weight: 700;
@@ -462,6 +465,7 @@ path {
     background-color: #fd8300;
     transition: all 0.5s ease;
 }
+
 .asside>li>a::before {
     content: "";
     position: absolute;
@@ -473,7 +477,45 @@ path {
     border-top: 2rem solid #666;
     border-right: 2rem solid #666;
     transform: translateY(-50%) rotate(45deg);
+}
 
+
+aside {
+    position: static;
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.second {
+    font-size: 18px;
+}
+
+.asside {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+}
+
+.asside li {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.asside>li>a {
+    font-size: 16px;
+    padding: 16px 8px;
+    border-bottom: 1px solid #cecedd;
+}
+
+.menuside {
+    position: static;
+    background: none;
+    padding-left: 15px;
 }
 
 .sidemenu {
@@ -735,11 +777,13 @@ figure p {
 
 .bottom {
     padding: 41rem 0;
+    flex-wrap: wrap;
 }
 
 .pose {
     position: sticky;
     top: 60rem;
+    flex-wrap: wrap;
 }
 
 figure {
@@ -844,7 +888,8 @@ figcaption a {
     border-collapse: collapse;
     text-align: center;
     font-size: 15rem;
-    border-radius: 10px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 
@@ -864,6 +909,7 @@ figcaption a {
     padding: 10rem;
     color: #666;
     border: 1px solid #e0e0e0;
+
 }
 
 .cottages td:first-child {
@@ -1098,28 +1144,6 @@ path {
     border-right: 2rem solid #fff;
 }
 
-
-
-.second>h2 {
-    font-size: 16rem;
-    line-height: 1.5em;
-    color: #fff;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-    background-color: #1f1f56;
-    padding: 13rem 15rem;
-    border-radius: 2rem 2rem 0 0;
-}
-
-.menu a {
-    display: block;
-    padding: 16rem 25rem 14rem 15rem;
-    font-size: 14rem;
-    line-height: 1.7em;
-    color: #b1b1d2;
-    position: relative;
-}
-
 .sidemenu {
     display: none;
     background-color: #e4e4ec;
@@ -1148,12 +1172,37 @@ path {
 
 .menu li {
     position: relative;
+    margin-bottom: 12rem;
+    padding-bottom: 8rem;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
 .menu li a {
+    font-size: 20rem;
+    font-weight: bold;
+    color: #24242b;
+    letter-spacing: 1rem;
+}
+
+
+.menu li a {
+    color: #24242b;
+    font-size: 18rem;
+    font-weight: bold;
+    padding: 16rem 5rem;
     display: block;
-    padding: 5rem 10rem;
-    text-decoration: none;
+}
+
+.menu #cancel {
+    position: absolute;
+    top: 15rem;
+    right: 15rem;
+    font-size: 25rem;
+    z-index: 10001;
 }
 
 .menu li .sidemenu {
@@ -1303,7 +1352,6 @@ figure p {
     line-height: 24px;
     text-decoration: underline;
     color: #25252c;
-    font-family: "Arial";
 }
 
 .office {
@@ -1312,10 +1360,6 @@ figure p {
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-}
-
-.conect {
-    padding: ;
 }
 
 .contact-form {
@@ -1379,10 +1423,166 @@ label {
     cursor: pointer;
 }
 
+
+.burger div {
+    width: 100%;
+    height: 4rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 2;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    padding: 32px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#black_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+}
+
+#cancel {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#burger,
+#burger:before,
+#burger:after {
+    width: 50px;
+    height: 5px;
+    background-color: #25252c;
+}
+
+#burger_container {
+    position: relative;
+    right: 50px;
+
+}
+
+#burger {
+    display: block;
+    position: absolute;
+    width: 50rem;
+    height: 5rem;
+    background-color: #1e1ed6;
+    transform: translateY(150%);
+    top: 5px;
+    right: 10rem;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+#burger::before,
+#burger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 50rem;
+    height: 5rem;
+    background-color: #1e1ed6;
+}
+
+#burger::before {
+    top: -10rem;
+}
+
+#burger::after {
+    bottom: -10rem;
+}
+
 @media screen and (min-width: 768px) {
     html {
         font-size: .9px;
     }
+
+    #menu {
+        position: static;
+        color: #b1b1d2;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: flex !important;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 10rem;
+        gap: 10px;
+    }
+
+    #black_bg {
+        display: none !important;
+    }
+
+    #burger {
+        display: none !important;
+    }
+
+    #cancel {
+        display: none !important;
+    }
+
+    #menu {
+        position: static;
+        right: 0;
+        width: auto;
+        height: auto;
+        background: none;
+        box-shadow: none;
+        display: block !important;
+        padding: 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+        background: none;
+        border: none;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .menu li {
+        display: block;
+        border-bottom: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li a {
+        font-size: 16px;
+        font-weight: normal;
+        color: #b1b1d2;
+        margin: 0;
+        padding: 0 8px;
+        background: none;
+        text-decoration: none;
+        display: block;
+    }
+    
 }
 
 @media screen and (min-width: 1024px) {
