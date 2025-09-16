@@ -97,11 +97,13 @@ footer {
     background-color: #1f1f56;
     padding: 5rem 0 5rem;
     flex-wrap: wrap;
+    z-index: 2;
 }
 
 .top {
     padding: 80rem 0 29rem;
     flex-wrap: wrap;
+    gap: 35rem;
 }
 
 .menu {
@@ -481,15 +483,15 @@ path {
 
 
 aside {
+    display: none;
     position: static;
-    width: 100%;
     margin-top: 30px;
     padding: 10px;
     z-index: 1;
 }
 
 .second {
-    font-size: 18px;
+    font-size: 14rem;
 }
 
 .asside {
@@ -723,9 +725,7 @@ figure:hover picture img {
     padding: 15rem;
 }
 
-.column {
-    column-gap: 24rem;
-}
+
 
 .items_center {
     align-items: center;
@@ -1056,11 +1056,6 @@ figcaption h3 {
 
 }
 
-.flex-between {
-    display: flex;
-    justify-content: space-between;
-}
-
 .sidebar {
     min-width: 219rem;
     font-size: 14rem;
@@ -1250,10 +1245,6 @@ figcaption h4::before {
     transition: .5s ease;
 }
 
-
-
-
-
 .build p {
     color: #9999a6;
 }
@@ -1269,6 +1260,7 @@ figcaption h4::before {
 
 .column {
     column-gap: 24rem;
+    flex-wrap: wrap;
 }
 
 .items_center {
@@ -1325,6 +1317,7 @@ figure p {
 
 .bottom {
     padding: 41rem 0;
+    gap: 20rem;
 }
 
 .contact {
@@ -1480,13 +1473,14 @@ label {
 
 #burger {
     display: block;
-    position: absolute;
+    position: fixed;
     width: 50rem;
     height: 5rem;
     background-color: #1e1ed6;
     transform: translateY(150%);
     top: 5px;
     right: 10rem;
+    z-index: 3;
 }
 
 .wrap {
@@ -1582,7 +1576,16 @@ label {
         text-decoration: none;
         display: block;
     }
-    
+    aside {
+        display: block;
+        position: static;
+        margin-top: 30px;
+        padding: 10px;
+        z-index: 1;
+    }
+    .column {
+        flex-wrap: nowrap;
+    }
 }
 
 @media screen and (min-width: 1024px) {
