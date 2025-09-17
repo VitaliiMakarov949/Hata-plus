@@ -95,7 +95,7 @@ footer {
     left: 0%;
     width: 100%;
     background-color: #1f1f56;
-    padding: 5rem 0 5rem;
+    box-shadow: #000;
     flex-wrap: wrap;
     z-index: 2;
 }
@@ -495,9 +495,9 @@ aside {
 }
 
 .asside {
+    min-width: 220rem;
     flex-direction: column;
     gap: 0;
-    padding: 0;
     background: none;
     border-radius: 0;
 }
@@ -513,20 +513,36 @@ aside {
     padding: 16px 8px;
     border-bottom: 1px solid #cecedd;
 }
-
-.menuside {
-    position: static;
-    background: none;
-    padding-left: 15px;
-}
-
 .sidemenu {
-    display: none;
-    background-color: #e4e4ec;
+    position: relative;
 }
 
 .sidemenu a {
     background-color: #e4e4ec;
+}
+.sidemenu::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    
+}
+.sidemenus {
+    position: relative;
+}
+
+.sidemenus::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    top: 0;
+    left: -5px;
+    width: 5px;
+    height: 100%; 
+    
 }
 
 .sidemenu li>a:hover {
@@ -541,16 +557,6 @@ aside {
 
 }
 
-.sidemenu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background-color: #e4e4ec;
-    min-width: 150px;
-    z-index: 1000;
-}
-
 .sidemenu li:hover .sidemenus {
     display: block;
 }
@@ -562,7 +568,7 @@ aside {
 }
 
 .sidemenu li {
-    position: relative;
+    position: absolute;
 }
 
 .sidemenu li:hover {
@@ -641,9 +647,6 @@ aside {
 
 }
 
-menu {
-    border-radius: 0 0 3rem 3rem;
-}
 
 
 .menu>li>a:hover {
@@ -671,31 +674,9 @@ menu {
 
 }
 
-
-figcaption h4 {
-    position: relative;
-    color: #1f1f56;
-    transition: color .5s ease;
-}
-
-figcaption h4::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2rem;
-    width: 0;
-    height: 2rem;
-    background-color: #1f1f56;
-    transition: .5s ease;
-}
-
 h4 {
     color: #1f1f56;
     font-size: 15rem;
-}
-
-h4 a :hover {
-    color: #1f1f56;
 }
 
 figcaption h4:hover::before {
@@ -706,6 +687,7 @@ figure picture img {
     width: 100%;
     height: auto;
     transition: .5s ease;
+    padding-bottom: 5px;
 }
 
 figure:hover picture img {
@@ -724,8 +706,6 @@ figure:hover picture img {
     background-color: #dcdce6;
     padding: 15rem;
 }
-
-
 
 .items_center {
     align-items: center;
@@ -802,7 +782,6 @@ figcaption a {
     position: absolute;
 }
 
-
 .menu a {
     text-decoration: none;
     font-size: 14rem;
@@ -870,8 +849,6 @@ figcaption a {
     margin-right: 11rem;
 }
 
-
-
 .but a {
     color: #25252c;
     text-decoration: none;
@@ -890,6 +867,7 @@ figcaption a {
     font-size: 15rem;
     border-radius: 5px;
     overflow: hidden;
+    border: none !important;
 }
 
 
@@ -897,7 +875,18 @@ figcaption a {
     background-color: #1d2a5c;
     color: #fff;
     padding: 12rem;
-    border: 1px solid #e0e0e0;
+    border: none !important; 
+    border-right: 1px solid #274569; 
+}
+.cottages th:last-child {
+    border-right: none !important; 
+}
+.cottages td {
+    background-color: #e4e4ec;
+    padding: 10rem;
+    color: #666;
+    border: none !important; 
+    border-right: 1px solid #cecedd; 
 }
 
 .table_main th:first-child {
@@ -908,7 +897,7 @@ figcaption a {
     background-color: #e4e4ec;
     padding: 10rem;
     color: #666;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #cecedd;
 
 }
 
@@ -1103,9 +1092,7 @@ path {
     transition: all .5s ease;
 }
 
-.menu {
-    border-radius: 0 0 3rem 3rem;
-}
+
 
 
 .menu>li>a:hover {
@@ -1160,15 +1147,9 @@ path {
 
 }
 
-.sidemenu a::before {
-    content: none;
-
-}
-
 .menu li {
     position: relative;
-    margin-bottom: 12rem;
-    padding-bottom: 8rem;
+   
 }
 
 .menu li:last-child {
@@ -1487,6 +1468,7 @@ label {
     flex-wrap: wrap;
 }
 
+
 #burger::before,
 #burger::after {
     content: "";
@@ -1520,8 +1502,7 @@ label {
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
-        padding: 10rem;
-        gap: 10px;
+        gap: 10rem;
     }
 
     #black_bg {
@@ -1550,7 +1531,8 @@ label {
     .menu {
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        position: relative;
+        gap: 30rem;
         padding: 0;
         margin: 0;
         background: none;
@@ -1559,28 +1541,22 @@ label {
         justify-content: flex-start;
     }
 
-    .menu li {
-        display: block;
-        border-bottom: none;
-        padding: 0;
-        margin: 0;
+    .menu>li {
+        padding: 5rem 0 5rem;
     }
-
+    
     .menu li a {
-        font-size: 16px;
+        font-size: 16rem;
         font-weight: normal;
         color: #b1b1d2;
-        margin: 0;
-        padding: 0 8px;
-        background: none;
         text-decoration: none;
         display: block;
     }
     aside {
         display: block;
         position: static;
-        margin-top: 30px;
-        padding: 10px;
+        margin-top: 30rem;
+        padding: 10rem;
         z-index: 1;
     }
     .column {
