@@ -551,7 +551,7 @@ aside {
     display: none;
     position: absolute;
     top: 0;
-    left: calc( 100% + 5px);
+    left: calc(100% + 5px);
     background-color: #e4e4ec;
     min-width: 150px;
     z-index: 1000;
@@ -574,6 +574,7 @@ aside {
     background-color: #fd8300;
     transition: all 0.5s ease;
 }
+
 .rigthmenu::before {
     content: "";
     position: absolute;
@@ -583,6 +584,7 @@ aside {
     height: 5px;
     background: transparent;
 }
+
 .asside {
     background-color: #e4e4ec;
     border-radius: 0 0 3rem 3rem;
@@ -628,25 +630,6 @@ aside {
 .menu>li>a:hover {
     display: block;
     transition: all .5s ease;
-
-}
-
-.menu li:hover .sidemenu {
-    display: block;
-    box-shadow: inset 0rem -1rem 0rem #cecedd;
-}
-
-.sidemenu>li>a::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 10rem;
-    display: block;
-    width: 8rem;
-    height: 8rem;
-    border-top: 2rem solid #666;
-    border-right: 2rem solid #666;
-    transform: translateY(-50%) rotate(45deg);
 
 }
 
@@ -869,18 +852,22 @@ figcaption a {
 
 .table_main th:first-child {
     text-align: left;
+    padding-left: 20px;
 }
 
 .cottages td:first-child {
     text-align: left;
+    padding-left: 20px;
 }
 
 .cottages td:last-child {
     text-align: right;
+    padding-right: 20px;
 }
 
 .table_main th:last-child {
     text-align: right;
+    padding-right: 20px;
 }
 
 .cottages tr:hover td {
@@ -1080,7 +1067,7 @@ path {
     content: "";
     position: absolute;
     top: 50%;
-    right: 10rem;
+    right: 3rem;
     display: block;
     width: 8rem;
     height: 8rem;
@@ -1130,6 +1117,7 @@ path {
     background-color: #e4e4ec;
     z-index: 1;
 }
+
 .sidemenu li::before {
     content: "";
     position: absolute;
@@ -1138,6 +1126,7 @@ path {
     top: -5px;
     left: 0;
 }
+
 .menu>li {
     display: inline-block;
 }
@@ -1501,7 +1490,7 @@ label {
     .column {
         flex-wrap: nowrap;
     }
-    
+
 }
 
 @media screen and (min-width: 1024px) {
