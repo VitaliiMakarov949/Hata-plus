@@ -513,6 +513,7 @@ aside {
     padding: 16px 8px;
     border-bottom: 1px solid #cecedd;
 }
+
 .sidemenu {
     position: relative;
 }
@@ -874,7 +875,7 @@ figcaption a {
 .cottages th {
     background-color: #1d2a5c;
     color: #fff;
-    padding: 12rem;
+    padding: 8rem;
     border: none !important; 
     border-right: 1px solid #274569; 
 }
@@ -895,7 +896,7 @@ figcaption a {
 
 .cottages td {
     background-color: #e4e4ec;
-    padding: 10rem;
+    padding: 8rem;
     color: #666;
     border: 1px solid #cecedd;
 
