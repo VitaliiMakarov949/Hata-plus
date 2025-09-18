@@ -79,6 +79,10 @@ aside {
     grid-area: aside;
 }
 
+.toptext {
+    padding: 10rem 0 10rem;
+}
+
 footer {
     grid-area: footer;
     background-color: #ededf5;
@@ -93,7 +97,7 @@ footer {
     position: fixed;
     top: 0;
     left: 0%;
-    width: 100%;
+    width: calc(100% + 5px);
     background-color: #1f1f56;
     box-shadow: #000;
     flex-wrap: wrap;
@@ -510,7 +514,6 @@ aside {
 
 .asside>li>a {
     font-size: 16px;
-    padding: 16px 8px;
     border-bottom: 1px solid #cecedd;
 }
 
@@ -518,32 +521,40 @@ aside {
     position: relative;
 }
 
+.sidemenu li {
+    border-bottom: 1px solid #cecedd;
+}
+
+.sidemenu :last-child {
+    border: none;
+}
+
 .sidemenu a {
     background-color: #e4e4ec;
 }
-.sidemenu::before{
+
+.sidemenu::before {
     content: "";
     position: absolute;
-    background-color: red;
-    top: -5px;
+    top: calc(100%+10px);
     left: 0;
     width: 100%;
     height: 5px;
-    
+    background: transparent;
 }
-.sidemenus {
+
+.rigthmenu {
     position: relative;
 }
 
-.sidemenus::before {
+.rigthmenu::before {
     content: "";
     position: absolute;
-    background-color: red;
     top: 0;
-    left: -5px;
+    left: calc(100%+5px);
     width: 5px;
-    height: 100%; 
-    
+    height: 100%;
+    background: transparent;
 }
 
 .sidemenu li>a:hover {
@@ -558,13 +569,12 @@ aside {
 
 }
 
-.sidemenu li:hover .sidemenus {
+.sidemenu li:hover .rigthmenu {
     display: block;
 }
 
 .sidemenu a {
     background-color: #e4e4ec;
-    padding: 10px;
     display: block;
 }
 
@@ -577,7 +587,7 @@ aside {
     transition: all 1s ease;
 }
 
-.sidemenus {
+.rigthmenu {
     display: none;
     position: absolute;
     top: 0;
@@ -588,20 +598,19 @@ aside {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.sidemenus a {
-    padding: 10px;
+.rigthmenu a {
     display: block;
     color: #666;
     text-decoration: none;
 }
 
-.sidemenus a:hover {
+.rigthmenu a:hover {
     background-color: #fd8300;
     color: #fff;
     transition: all 0.5s ease;
 }
 
-.sidemenus li:hover {
+.rigthmenu li:hover {
     background-color: #fd8300;
     transition: all 0.5s ease;
 }
@@ -647,8 +656,6 @@ aside {
     transform: translateY(-50%) rotate(45deg);
 
 }
-
-
 
 .menu>li>a:hover {
     display: block;
@@ -876,18 +883,20 @@ figcaption a {
     background-color: #1d2a5c;
     color: #fff;
     padding: 8rem;
-    border: none !important; 
-    border-right: 1px solid #274569; 
+    border: none !important;
+    border-right: 1px solid #274569;
 }
+
 .cottages th:last-child {
-    border-right: none !important; 
+    border-right: none !important;
 }
+
 .cottages td {
     background-color: #e4e4ec;
     padding: 10rem;
     color: #666;
-    border: none !important; 
-    border-right: 1px solid #cecedd; 
+    border: none !important;
+    border-right: 1px solid #cecedd;
 }
 
 .table_main th:first-child {
@@ -1127,30 +1136,9 @@ path {
     border-right: 2rem solid #fff;
 }
 
-.sidemenu {
-    display: none;
-    background-color: #e4e4ec;
-}
-
-.sidemenu a {
-    background-color: #e4e4ec;
-}
-
-.sidemenu li>a:hover {
-    color: #666;
-    background-color: #fd8300;
-    transition: all 1s ease;
-}
-
-.sidemenu li:hover {
-    background-color: #fd8300;
-    transition: all 1s ease;
-
-}
-
 .menu li {
     position: relative;
-   
+
 }
 
 .menu li:last-child {
@@ -1163,15 +1151,6 @@ path {
     font-weight: bold;
     color: #24242b;
     letter-spacing: 1rem;
-}
-
-
-.menu li a {
-    color: #24242b;
-    font-size: 18rem;
-    font-weight: bold;
-    padding: 16rem 5rem;
-    display: block;
 }
 
 .menu #cancel {
@@ -1187,23 +1166,9 @@ path {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 100rem;
+    min-width: 120rem;
     background-color: #e4e4ec;
     z-index: 1000;
-}
-
-
-.menu li:hover .sidemenu {
-    display: block;
-}
-
-.sidemenu li {
-    position: relative;
-}
-
-.sidemenu li .sidemenu {
-    top: 0;
-    left: 100%;
 }
 
 .menu>li {
@@ -1542,14 +1507,14 @@ label {
         align-items: center;
         justify-content: flex-start;
         background-color: #1f1f56;
-    
+
 
     }
 
-    .menu>li {
-        padding: 5rem 0 5rem;
+    .menu .firstmenu {
+        padding: 10rem 0 10rem;
     }
-    
+
     .menu li a {
         font-size: 16rem;
         font-weight: normal;
@@ -1557,6 +1522,7 @@ label {
         text-decoration: none;
         display: block;
     }
+
     aside {
         display: block;
         position: static;
@@ -1564,6 +1530,7 @@ label {
         padding: 10rem;
         z-index: 1;
     }
+
     .column {
         flex-wrap: nowrap;
     }
