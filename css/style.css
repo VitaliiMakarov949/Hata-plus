@@ -63,6 +63,7 @@ ul {
 
 header {
     grid-area: header;
+    box-shadow: 0 8px 24px 0 rgba(0,0,0,0.06);
 }
 
 .wrapper {
@@ -99,7 +100,6 @@ footer {
     left: 0%;
     width: calc(100% + 5px);
     background-color: #1f1f56;
-    box-shadow: #000;
     flex-wrap: wrap;
     z-index: 2;
 }
