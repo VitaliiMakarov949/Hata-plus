@@ -523,6 +523,7 @@ aside {
 
 .sidemenu li {
     border-bottom: 1px solid #cecedd;
+    border-radius: 1px solid ;
 }
 
 .sidemenu :last-child {
@@ -559,7 +560,7 @@ aside {
 
 .sidemenu li>a:hover {
     color: #666;
-    background-color: #cecedd;
+    background-color: #fd8300;
     transition: all 1s ease;
 }
 
