@@ -63,7 +63,7 @@ ul {
 
 header {
     grid-area: header;
-    box-shadow: 0 8px 24px 0 rgba(0,0,0,0.06);
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.06);
 }
 
 .wrapper {
@@ -828,7 +828,6 @@ figcaption a {
     font-size: 15rem;
     border-radius: 5px;
     overflow: hidden;
-    border: none !important;
 }
 
 
@@ -836,19 +835,14 @@ figcaption a {
     background-color: #1d2a5c;
     color: #fff;
     padding: 8rem;
-    border: none !important;
     border-right: 1px solid #274569;
 }
 
-.cottages th:last-child {
-    border-right: none !important;
-}
 
 .cottages td {
     background-color: #e4e4ec;
     padding: 16rem 0 14rem;
     color: #666;
-    border: none !important;
     border-right: 1px solid #cecedd;
 }
 
