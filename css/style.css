@@ -1418,7 +1418,7 @@ label {
         right: 0;
         width: 100%;
         height: 100%;
-        display: flex !important;
+        display: flex; 
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
@@ -1426,15 +1426,15 @@ label {
     }
 
     #black_bg {
-        display: none !important;
+        display: none; 
     }
 
     #burger {
-        display: none !important;
+        display: none; 
     }
 
     #cancel {
-        display: none !important;
+        display: none; 
     }
 
     #menu {
@@ -1444,7 +1444,7 @@ label {
         height: auto;
         background: none;
         box-shadow: none;
-        display: block !important;
+        display: block; 
         padding: 0;
 
     }
