@@ -896,7 +896,7 @@ figcaption a {
 
 .cottages td {
     background-color: #e4e4ec;
-    padding: 8rem;
+    padding: 5rem;
     color: #666;
     border: 1px solid #cecedd;
 
@@ -1523,8 +1523,11 @@ label {
         right: 0;
         width: auto;
         height: auto;
+        background: none;
+        box-shadow: none;
         display: block !important;
         padding: 0;
+
     }
 
     .menu {
@@ -1534,8 +1537,13 @@ label {
         gap: 30rem;
         padding: 0;
         margin: 0;
+        background: none;
+        border: none;
         align-items: center;
         justify-content: flex-start;
+        background-color: #1f1f56;
+    
+
     }
 
     .menu>li {
