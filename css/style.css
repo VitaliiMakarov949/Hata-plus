@@ -63,7 +63,7 @@ ul {
 
 header {
     grid-area: header;
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.06);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.06);
 }
 
 .wrapper {
@@ -114,14 +114,6 @@ footer {
     gap: 26rem;
 }
 
-.menu a {
-    text-decoration: none;
-    font-size: 14rem;
-    letter-spacing: 2rem;
-    line-height: 1.7em;
-    color: #b1b1d2;
-    list-style: none;
-}
 
 .menu>li>a:hover {
     transition: all .9s ease;
@@ -220,7 +212,7 @@ footer {
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    padding-top: 40rem;
+    padding: 40rem 0 15rem;
     text-align: left;
 }
 
@@ -378,6 +370,7 @@ figcaption h3 {
 .conect {
     gap: 10rem;
 }
+
 path {
     fill: #fff;
 }
@@ -388,7 +381,7 @@ path {
 }
 
 .second>h2 {
-    font-size: 16rem;
+    font-size: 20rem;
     line-height: 1.5em;
     color: #fff;
     font-weight: 700;
@@ -519,7 +512,11 @@ aside {
     border-bottom: 1px solid #cecedd;
 }
 
-
+.asside>li:last-child>a {
+    border-bottom: none;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
 
 .sidemenu li>a:hover {
     color: #666;
@@ -538,6 +535,7 @@ aside {
 .sidemenu a {
     background-color: #e4e4ec;
     display: block;
+
 }
 
 .sidemenu li {
@@ -587,21 +585,17 @@ aside {
     background: transparent;
 }
 
-.asside {
+
+.asside>li {
     background-color: #e4e4ec;
-    border-radius: 0 0 3rem 3rem;
     overflow: hidden;
 }
 
-.asside>li {
-    border-bottom: 1rem solid #cecedd;
-    background-color: #e4e4ec;
-
-}
-
 .asside>li:last-child {
-    border-bottom: none;
-
+    border-radius: 0 0 2px 2px;
+    overflow: hidden;
+    background-color: #e4e4ec;
+    border: none;
 }
 
 .asside>li>a:hover {
@@ -689,7 +683,7 @@ figure:hover picture img {
 }
 
 .words {
-    padding: 12rem 0 16rem;
+    padding: 12rem 0 20rem;
     text-align: left;
 }
 
@@ -835,7 +829,10 @@ figcaption a {
     background-color: #1d2a5c;
     color: #fff;
     padding: 8rem;
-    border-right: 1px solid #274569;
+    border: 1px solid #274569;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 
@@ -843,7 +840,9 @@ figcaption a {
     background-color: #e4e4ec;
     padding: 16rem 0 14rem;
     color: #666;
-    border-right: 1px solid #cecedd;
+    border: 1px solid #cecedd;
+    border-bottom: none;
+    border-left: none;
 }
 
 .table_main th:first-child {
@@ -859,6 +858,8 @@ figcaption a {
 .cottages td:last-child {
     text-align: right;
     padding-right: 20px;
+    border-left: none;
+    border-right: none;
 }
 
 .table_main th:last-child {
@@ -1089,11 +1090,14 @@ path {
     margin-bottom: 0;
 }
 
-.menu li a {
-    font-size: 20rem;
-    font-weight: bold;
-    color: #24242b;
-    letter-spacing: 1rem;
+
+
+.sidemenu li a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
 }
 
 .menu #cancel {
@@ -1187,9 +1191,6 @@ figcaption h4::before {
     color: #fff;
 }
 
-.words {
-    padding: 12rem 0 16rem;
-}
 
 .sidebars {
     font-size: 14rem;
@@ -1314,6 +1315,7 @@ label {
     font-size: 14px;
     cursor: pointer;
 }
+
 .around_flex {
     justify-content: space-around;
 }
@@ -1418,7 +1420,7 @@ label {
         right: 0;
         width: 100%;
         height: 100%;
-        display: flex; 
+        display: flex;
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
@@ -1426,15 +1428,15 @@ label {
     }
 
     #black_bg {
-        display: none; 
+        display: none;
     }
 
     #burger {
-        display: none; 
+        display: none;
     }
 
     #cancel {
-        display: none; 
+        display: none;
     }
 
     #menu {
@@ -1444,7 +1446,7 @@ label {
         height: auto;
         background: none;
         box-shadow: none;
-        display: block; 
+        display: block;
         padding: 0;
 
     }
@@ -1466,16 +1468,14 @@ label {
     }
 
     .menu .firstmenu {
+        font-size: 14px;
+        letter-spacing: 2px;
+        line-height: 24px;
+        color: #b1b1d2;
         padding: 10rem 0 10rem;
     }
 
-    .menu li a {
-        font-size: 16rem;
-        font-weight: normal;
-        color: #b1b1d2;
-        text-decoration: none;
-        display: block;
-    }
+   
 
     aside {
         display: block;
