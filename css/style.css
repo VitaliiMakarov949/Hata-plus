@@ -1133,7 +1133,7 @@ path {
 .sidemenu li:last-child {
     border-radius: 0 0 2px 2px;
 }
-.sidemenu li::before {
+.sidemenu::before {
     content: "";
     position: absolute;
     width: 100%;
