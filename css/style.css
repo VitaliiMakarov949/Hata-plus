@@ -80,10 +80,6 @@ aside {
     grid-area: aside;
 }
 
-.toptext {
-    padding: 10rem 0 10rem;
-}
-
 footer {
     grid-area: footer;
     background-color: #ededf5;
