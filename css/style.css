@@ -572,11 +572,9 @@ aside {
     border: none;
 }
 .rigthmenu a {
-    display: block;
     color: #666;
     text-decoration: none;
-    padding-left: 0 0 5px 0;
-}
+}   
 
 .rigthmenu a:hover {
     background-color: #fd8300;
