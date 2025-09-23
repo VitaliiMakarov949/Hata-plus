@@ -60,10 +60,12 @@ a {
 ul {
     list-style: none;
 }
+.shadow {
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.06);
 
+}
 header {
     grid-area: header;
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.06);
 }
 
 .wrapper {
@@ -98,12 +100,15 @@ footer {
     background-color: #1f1f56;
     flex-wrap: wrap;
     z-index: 2;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.06);
+
 }
 
 .top {
     padding: 80rem 0 29rem;
     flex-wrap: wrap;
     gap: 35rem;
+    
 }
 
 .menu {
@@ -480,7 +485,6 @@ path {
 aside {
     display: none;
     position: static;
-    margin-top: 30px;
     padding: 10px;
     z-index: 1;
 }
@@ -590,8 +594,8 @@ aside {
     position: absolute;
     top: 0;
     left: -5px;
-    width: 100%;
-    height: 5px;
+    width: 5px;
+    height: 100%;
     background: transparent;
 }
 
@@ -826,7 +830,7 @@ figcaption a {
 }
 
 .cottages {
-    width: 70vw;
+    width: 100%;
     border-collapse: collapse;
     text-align: center;
     font-size: 15rem;
@@ -934,7 +938,6 @@ sup {
 }
 
 .padding {
-    padding-top: 23rem;
     padding-bottom: 47rem;
 }
 
@@ -1126,6 +1129,7 @@ path {
     background-color: #e4e4ec;
     z-index: 1;
     border-radius: 2px;
+    overflow: hidden;
 }
 
 .sidemenu li::before {
@@ -1489,7 +1493,6 @@ label {
     aside {
         display: block;
         position: static;
-        margin-top: 30rem;
         padding: 10rem;
         z-index: 1;
     }
