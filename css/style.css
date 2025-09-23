@@ -535,7 +535,6 @@ aside {
 }
 
 .sidemenu a {
-    background-color: #e4e4ec;
     display: block;
     padding-left: 5px;
     color: #25252c !important;
@@ -543,6 +542,7 @@ aside {
 }
 
 .sidemenu li {
+    background-color: #e4e4ec;
     position: absolute;
     color: #25252c !important;
 }
@@ -596,7 +596,6 @@ aside {
     height: 100%;
     background: transparent;
 }
-
 
 .asside>li {
     background-color: #e4e4ec;
@@ -755,7 +754,6 @@ figcaption a {
     letter-spacing: 2rem;
     line-height: 1.7em;
     color: #b1b1d2;
-    list-style: none;
 }
 
 .menu>li>a:hover {
@@ -1127,9 +1125,14 @@ path {
     background-color: #e4e4ec;
     z-index: 1;
     border-radius: 2px;
+}
+.sidemenu li:first-child {
+    border-radius: 2px 2px 0 0;
     overflow: hidden;
 }
-
+.sidemenu li:last-child {
+    border-radius: 0 0 2px 2px;
+}
 .sidemenu li::before {
     content: "";
     position: absolute;
