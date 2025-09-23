@@ -215,7 +215,7 @@ footer {
 .main_text {
     font-size: 14rem;
     line-height: 1.7em;
-    color: #fff;
+    color: #666;
     text-align: center;
 }
 
@@ -515,7 +515,9 @@ aside {
 }
 
 .sidemenu li>a:hover {
-    color: #666;
+    display: block;
+    width: 100%;
+    color: #fff;
     background-color: #fd8300;
     transition: all 1s ease;
 }
@@ -531,11 +533,14 @@ aside {
 .sidemenu a {
     background-color: #e4e4ec;
     display: block;
+    padding-left: 5px;
+    color: #25252c !important;
 
 }
 
 .sidemenu li {
     position: absolute;
+    color: #25252c !important;
 }
 
 .sidemenu li:hover {
@@ -551,13 +556,22 @@ aside {
     background-color: #e4e4ec;
     min-width: 150px;
     z-index: 1000;
+    border-radius: 2px;
+    overflow: hidden;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-
+.rigthmenu li {
+   border-bottom: 1px solid #cecedd;
+   border-radius: 1px;
+}
+.rigthmenu li:last-child a {
+    border: none;
+}
 .rigthmenu a {
     display: block;
     color: #666;
     text-decoration: none;
+    padding-left: 0 0 5px 0;
 }
 
 .rigthmenu a:hover {
@@ -827,8 +841,6 @@ figcaption a {
     padding: 8rem;
     border: 1px solid #274569;
     border-top: none;
-    border-left: none;
-    border-right: none;
 }
 
 
@@ -891,11 +903,7 @@ figcaption a {
     padding-top: 59rem;
 }
 
-.main_text {
-    font-size: 14rem;
-    line-height: 1.7em;
-    color: #666;
-}
+
 
 .special {
     display: flex;
@@ -1062,8 +1070,8 @@ path {
     top: 50%;
     right: 3rem;
     display: block;
-    width: 8rem;
-    height: 8rem;
+    width: 4rem;
+    height: 4rem;
     border-top: 2rem solid #666;
     border-right: 2rem solid #666;
     transform: translateY(-50%) rotate(45deg);
@@ -1088,13 +1096,18 @@ path {
 
 
 
-.sidemenu li a {
+.sidemenu li  {
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 24px;
     color: #25252c;
-    font-family: "Arial";
+    border-bottom: 1px solid #cecedd;
+    border-radius: 2px;
 }
+.sidemenu li:last-child a {
+    border-bottom: none;
+}
+
 
 .menu #cancel {
     position: absolute;
@@ -1112,6 +1125,7 @@ path {
     min-width: 120rem;
     background-color: #e4e4ec;
     z-index: 1;
+    border-radius: 2px;
 }
 
 .sidemenu li::before {
@@ -1412,7 +1426,6 @@ label {
 
     #menu {
         position: static;
-        color: #b1b1d2;
         right: 0;
         width: 100%;
         height: 100%;
@@ -1463,7 +1476,7 @@ label {
 
     }
 
-    .menu .firstmenu {
+    .firstmenu {
         font-size: 14px;
         letter-spacing: 2px;
         line-height: 24px;
