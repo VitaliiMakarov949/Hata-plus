@@ -252,11 +252,6 @@ sup {
     font-size: 10rem;
 }
 
-.padding {
-    padding-top: 23rem;
-    padding-bottom: 47rem;
-}
-
 h3 {
     font-size: 24rem;
     line-height: 1em;
@@ -592,7 +587,7 @@ aside {
     position: absolute;
     top: 0;
     left: -5px;
-    width: 5px;
+    width: 10px;
     height: 100%;
     background: transparent;
 }
@@ -846,7 +841,7 @@ figcaption a {
 
 .cottages td {
     background-color: #e4e4ec;
-    padding: 16rem 0 14rem;
+    padding: 13rem 0 12rem;
     color: #666;
     border: 1px solid #cecedd;
     border-bottom: none;
@@ -1067,7 +1062,7 @@ path {
     content: "";
     position: absolute;
     top: 50%;
-    right: 3rem;
+    right: 5rem;
     display: block;
     width: 4rem;
     height: 4rem;
