@@ -556,8 +556,6 @@ aside {
     min-width: 150px;
     z-index: 1000;
     border-radius: 2px;
-    overflow: hidden;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .rigthmenu li {
    border-bottom: 1px solid #cecedd;
@@ -586,10 +584,11 @@ aside {
     content: "";
     position: absolute;
     top: 0;
-    left: -5px;
+    left: -10px;
     width: 15px;
     height: 100%;
     background: transparent;
+    
 }
 
 .asside>li {
@@ -1116,7 +1115,7 @@ path {
     position: absolute;
     top: calc(100% + 5px);
     left: 0;
-    min-width: 120rem;
+    min-width: 140rem;
     background-color: #e4e4ec;
     z-index: 1;
     border-radius: 2px;
