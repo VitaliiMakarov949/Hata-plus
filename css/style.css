@@ -395,6 +395,14 @@ path {
     position: relative;
 
 }
+.asside>li>a:hover{
+    color: #fff;
+}
+.asside>li:hover {
+    color: #fff;
+    background-color: #fd8300;
+    transition: all 1s ease;
+}
 
 .menuside {
     display: none;
@@ -406,9 +414,10 @@ path {
     background-color: #e4e4ec;
 }
 
+
 .menuside li>a:hover {
     color: #666;
-    background-color: #fd8300;
+    background-color: #cecedd;
     transition: all 1s ease;
 }
 
@@ -418,12 +427,6 @@ path {
 
 }
 
-.menuside {
-    display: none;
-    position: relative;
-    background-color: #e4e4ec;
-    min-width: 150px;
-}
 
 .asside li:hover .menuside {
     display: block;
@@ -431,7 +434,7 @@ path {
 
 .menuside a {
     background-color: #e4e4ec;
-    padding: 10px;
+    padding: 30px;
     display: block;
 }
 
@@ -445,7 +448,7 @@ path {
 }
 
 .menuside a {
-    padding: 10px;
+    padding: 17rem 0 14rem 29rem;
     display: block;
     color: #666;
     text-decoration: none;
@@ -1232,6 +1235,18 @@ figure p {
 }
 
 .address {
+    font-size: 14rem;
+    line-height: 1.5em;
+    color: #666;
+    padding-bottom: 14rem;
+}
+.manager {
+    font-size: 14rem;
+    line-height: 1.5em;
+    color: #666;
+    padding-bottom: 14rem;
+}
+.director {
     font-size: 14rem;
     line-height: 1.5em;
     color: #666;
