@@ -170,9 +170,7 @@ footer {
     transition: all .5s ease;
 }
 
-.mail>img {
-    margin-right: 11rem;
-}
+
 
 .button {
     border-radius: 25rem;
@@ -252,7 +250,7 @@ sup {
     font-size: 10rem;
 }
 
-h3 {
+.project {
     font-size: 24rem;
     line-height: 1em;
     color: #24242b;
@@ -364,7 +362,8 @@ figcaption h3 {
 }
 
 .conect {
-    gap: 10rem;
+    gap: 28rem;
+    padding: 36rem 0 41rem;
 }
 
 path {
@@ -804,9 +803,7 @@ figcaption a {
     transition: all .5s ease;
 }
 
-.mail>img {
-    margin-right: 11rem;
-}
+
 
 .but a {
     color: #25252c;
@@ -931,13 +928,13 @@ sup {
     padding-bottom: 47rem;
 }
 
-h3 {
+.form {
     font-size: 24rem;
     line-height: 1em;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
-    padding: 31rem 0 25rem;
+    padding-bottom: 25rem;
 }
 
 
@@ -964,10 +961,7 @@ h3 {
     padding: 25rem 0 34rem;
 }
 
-hr {
-    border: none;
-    border: 1rem solid #e4e4ec;
-}
+
 
 .build h3 {
     color: #1f1f56;
@@ -1234,44 +1228,51 @@ figure p {
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
+    padding: 41rem 0 27rem;
 }
 
 .address {
     font-size: 14rem;
     line-height: 1.5em;
     color: #666;
+    padding-bottom: 14rem;
 }
-
+.phone {
+    padding-bottom: 14rem;
+}
 .phone a {
     font-size: 18rem;
     line-height: 1.3em;
     color: #25252c;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
 }
-
+.page {
+    padding-bottom: 14rem;
+}
 .mail {
     font-size: 16px;
     line-height: 24px;
     text-decoration: underline;
     color: #25252c;
+    padding-bottom: 34rem;
 }
-
+.mail a {
+    
+}
 .office {
     font-size: 14rem;
     line-height: 1.7em;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
+    padding-bottom: 19rem;
 }
 
-.contact-form {
-    max-width: 500px;
-    margin: auto;
-}
 
 .contact-form h3 {
     font-size: 18px;
-    margin-bottom: 15px;
 }
 
 .form-row {
@@ -1284,9 +1285,14 @@ figure p {
     flex: 1;
 }
 
-input,
 textarea {
     width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -1301,10 +1307,12 @@ textarea {
 .form-footer {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    padding-top: 10px;
     gap: 10px;
 }
-
+.news {
+    gap: 10rem;
+}
 button {
     background: #ff7b00;
     color: white;
