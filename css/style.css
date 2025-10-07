@@ -73,7 +73,11 @@ header {
     margin: 0 auto;
     padding: 0
 }
-
+.line {
+    width: 980rem;
+    margin: 0 auto;
+    padding: 0
+}
 main {
     grid-area: content;
 }
@@ -158,12 +162,7 @@ footer {
     margin-right: 11rem;
 }
 
-.mail {
-    font-size: 16rem;
-    line-height: 1.5em;
-    text-decoration: underline;
-    color: #25252c;
-}
+
 
 .mail:hover {
     color: #fd8300;
@@ -362,6 +361,7 @@ figcaption h3 {
 }
 
 .conect {
+    display: flex;
     gap: 28rem;
     padding: 36rem 0 41rem;
 }
@@ -1240,6 +1240,11 @@ figure p {
     color: #666;
     padding-bottom: 14rem;
 }
+.money {
+    font-size: 14rem;
+    line-height: 1.5em;
+    color: #666;
+}
 .manager {
     font-size: 14rem;
     line-height: 1.5em;
@@ -1271,11 +1276,10 @@ figure p {
     line-height: 24px;
     text-decoration: underline;
     color: #25252c;
-    padding-bottom: 34rem;
+    display: flex;
+    gap: 10rem;
 }
-.mail a {
-    
-}
+
 .office {
     font-size: 14rem;
     line-height: 1.7em;
@@ -1296,10 +1300,6 @@ figure p {
     margin-bottom: 10px;
 }
 
-.form-row input {
-    flex: 1;
-}
-
 textarea {
     width: 100%;
     padding: 10px;
@@ -1308,6 +1308,7 @@ textarea {
     font-size: 14px;
 }
 input {
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -1359,7 +1360,13 @@ label {
     border-radius: 2rem;
     transition: all 0.3s ease;
 }
-
+.massage {
+    margin-bottom: 10px;
+}
+.block {
+    width: 15px;
+    height: 15px;
+}
 #menu {
     position: fixed;
     top: 0;
@@ -1373,6 +1380,7 @@ label {
     padding: 32px 20px 0 20px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 #black_bg {
@@ -1449,8 +1457,6 @@ label {
     #menu {
         position: static;
         right: 0;
-        width: 100%;
-        height: 100%;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -1473,13 +1479,11 @@ label {
     #menu {
         position: static;
         right: 0;
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 40rem;
         background: none;
         box-shadow: none;
-        display: block;
         padding: 0;
-
     }
 
     .menu {

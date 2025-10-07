@@ -1,4 +1,8 @@
 
+const burger = document.getElementById('burger');
+const cancel = document.getElementById('cancel');
+const menu = document.getElementById('menu');
+const black_bg = document.getElementById('black_bg');
 
 burger.onclick = () => {
     menu.style.right = "0";
@@ -15,3 +19,4 @@ black_bg.onclick = () => {
     black_bg.style.display = "none";
     document.body.classList.remove('menu-open');
 }
+
