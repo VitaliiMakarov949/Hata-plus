@@ -243,6 +243,24 @@ footer {
     font-size: 20rem;
     color: #fd8300;
 }
+.submit {
+    display: inline-block;
+    background: #ff9900;
+    color: #fff;
+    font-family: 'Roboto Slab', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 31px;
+    box-shadow: 0 2px 8px rgba(255,153,0,0.08);
+    cursor: pointer;
+    text-align: center;
+}
+.submit:hover,
+.submit:focus {
+    background: #ff7b00;
+}
 
 sup {
     font-size: 10rem;
@@ -1358,7 +1376,6 @@ textarea {
     background: #e86e00;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0,0,0, 0.18);
-    transform: ;
 }
 .custom-checkbox {
     display: inline-flex;
@@ -1516,30 +1533,32 @@ label {
 
 #popup {
     display: none;
-    position: absolute;
-    width: 100vw;
-    height: 80vh;
-    padding: 20px;
-    border-radius: 5px;
-    background: #fff;
-    overflow: auto;
-    z-index: 2;
-}
-#dark {
-    /* position: absolute; */
+    position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(4px);
-    z-index: 2;
+    right: -100%; /* спочатку сховано за межами екрану */
+    width: 400px; /* або 100% для мобільної адаптації */
+    max-width: 100vw;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 0 3px 32px 2px rgba(34,41,47,.13);
+    z-index: 1010;
+    transition: right 0.4s cubic-bezier(.7,0,.3,1);
 }
-#close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
+
+#popup.active {
+    display: block;
+    right: 0;
 }
+
+#dark {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,.3);
+    z-index: 1000;
+    display: none;
+}
+#dark.active { display: block; }
 
 @media screen and (min-width: 768px) {
     html {
