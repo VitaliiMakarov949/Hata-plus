@@ -26,10 +26,6 @@ eye.onclick = () => {
         pass.setAttribute("type", "password")
     }
 }
-const button = document.getElementById('button');  
-const popup = document.getElementById('popup');       
-const close = document.getElementById('close');      
-const dark = document.getElementById('dark');  
 
 button.onclick = () => {
     popup.style.right = "0"
@@ -38,7 +34,6 @@ button.onclick = () => {
 dark.onclick = () => {
     popup.style.right = "-100%";
     dark.style.display = "block";
-    text.value = pageText.title
 }
 
 close.onclick = () => {

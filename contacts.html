@@ -66,7 +66,7 @@
             </div>
         </div>
         <div class="top flex-between wrapper items_center">
-            <div class="icons">
+            <div>
                 <a href="index.html">
                     <picture>
                         <source srcset="img/logo (1).webp" type="image/webp">
@@ -74,7 +74,7 @@
                     </picture>
                 </a>
             </div>
-            <div>
+            <div class="icons">
                 <p><a href="tel:+380971002525" class="number"><img src="img/phone.svg" alt="">+38(097) 100-25-25</a>
                 </p>
                 <p><a href="tel:+380971002525" class="number number1">+38(097) 100-25-25</a></p>
@@ -84,9 +84,15 @@
                             alt="">hataplus@hata.com.ua</a></p>
                 <p><a href="#" class="skype"><img src="img/skype.svg" alt="">hataplus</a></p>
             </div>
-            <div class="but">
-                <a href="#" class="button">Замовити дзвінок</a>
+            <div id="popup">
+                <div id="dark"></div>
+                <a href="#" id="close">X</a>
+                <input type="text" id="title" placeholder="Ваше ім’я">
+                <input type="text" id="title" placeholder="Телефон">
+                <input type="button" value="Відправити">
+                <p id="pageText">Замовити дзвінок</p>
             </div>
+            <a href="#" id="button" class="button">Замовити дзвінок</a>
         </div>
     </header>
     <main class="line ">
@@ -138,8 +144,10 @@
 
                     <div class="form-footer">
                         <button type="submit">Відправити</button>
-                        <label class="flex-between news">
-                            <input type="checkbox" name="subscribe" class="block"> Я бажаю отримувати останні новини
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="subscribe" class="block">
+                            <span class="checkmark"></span>
+                            Я бажаю отримувати останні новини
                         </label>
                     </div>
                 </form>
@@ -182,6 +190,7 @@
         </div>
         <p class="copy">© Будівельна компанія “Хата Плюс” 2018.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

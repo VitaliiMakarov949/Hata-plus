@@ -111,8 +111,6 @@ footer {
 .top {
     padding: 80rem 50rem 29rem 0;
     flex-wrap: wrap;
-    gap: 35rem;
-    
 }
 .conect {
     display: flex;
@@ -182,20 +180,6 @@ footer {
 .mail:hover {
     color: #fd8300;
     transition: all .5s ease;
-}
-
-
-
-.button {
-    border-radius: 25rem;
-    border-width: 2rem;
-    background-color: #fff;
-    border: 2rem solid #fd8300;
-    padding: 15rem 23rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15rem;
 }
 
 .but a {
@@ -391,7 +375,8 @@ figcaption h3 {
 path {
     fill: #fff;
 }
-
+.icons {
+}
 .icon-link:hover path {
     fill: #fd8300;
     transition: all .5s ease;
@@ -1356,19 +1341,69 @@ textarea {
 .news {
     gap: 10rem;
 }
-button {
-    background: #ff7b00;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+#button {
+    background: #fff;
+    color: #25252c;
+    border: 2px solid #fd8300;
+    padding: 15px 30px;
     border-radius: 20px;
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
+    
 }
 
-button:hover {
+#button:hover {
+
     background: #e86e00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0, 0.18);
+    transform: ;
+}
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox .checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #c5c5d4;
+    border-radius: 4px;
+    background: #fff;
+    margin-right: 8px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    border-color: #c5c5d4;
+}
+
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 9px;
+    border: solid #1f1f56;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
 }
 
 label {
@@ -1566,7 +1601,9 @@ label {
         color: #b1b1d2;
         padding: 10rem 0 10rem;
     }
-
+    .top {
+        flex-wrap: nowrap;
+    }
    
 
     aside {
