@@ -1630,7 +1630,7 @@ label {
         position: static;
         padding: 10rem;
         z-index: 1;
-        
+        width: 30%;
     }
 
     .column {
