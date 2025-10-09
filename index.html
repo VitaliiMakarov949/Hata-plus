@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes, Initial-scale=1.0, maximum-scale=2.0,
         minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Hata-plus</title>
+    <title>Hata-plus_main-page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -19,6 +19,7 @@
             <div class="wrapper flex-between items_center toptext">
                 <nav>
                     <ul id="menu" class="menu flex-between ">
+                        <li id="cancel"><a href="">X</a></li>
                         <li class="firstmenu"><a href="index.html">Головна</a></li>
                         <li class="firstmenu"><a href="#">Про компанію</a>
                         </li>
@@ -85,16 +86,15 @@
                             alt="">hataplus@hata.com.ua</a></p>
                 <p><a href="#" class="skype"><img src="img/skype.svg" alt="">hataplus</a></p>
             </div>
+            <div id="dark"></div>
             <div id="popup">
-                <div id="dark"></div>
                 <a href="#" id="close">X</a>
-                <input type="text" id="title" placeholder="Ваше ім’я">
-                <input type="text" id="title" placeholder="Телефон">
-                <input type="button" value="Відправити">
                 <p id="pageText">Замовити дзвінок</p>
+                <input type="text" id="name" placeholder="Ваше ім’я">
+                <input type="text" id="phone" placeholder="Телефон">
+                <button class="popup-btn">Відправити</button>
             </div>
             <a href="#" id="button" class="button">Замовити дзвінок</a>
-        </div>
         <div class="main_image main_text items_center">
             <h2 class="mainword">Пропозиція місяця</h2>
             <p class="words1">Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
@@ -103,7 +103,7 @@
                 <p class="metter">грн / м<sup>2</sup></p>
             </div>
         </div>
-        <div  id="burger" class="burger"></div> 
+        <div id="burger" class="burger"></div>
     </header>
     <main class="wrapper flex-between column padding">
         <div class="flex-just">

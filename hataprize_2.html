@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes, Initial-scale=1.0, maximum-scale=2.0,
         minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Hata-plus</title>
+    <title>Hata-plus_second-page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -14,10 +14,12 @@
 
 <body>
     <header class="shadow">
+        <div id="black_bg"></div>
         <div class="topline">
             <div class="wrapper flex-between items_center toptext">
                 <nav>
                     <ul id="menu" class="menu flex-between ">
+                        <li id="cancel"><a href="">X</a></li>
                         <li class="firstmenu"><a href="index.html">Головна</a></li>
                         <li class="firstmenu"><a href="#">Про компанію</a>
                         </li>
@@ -90,9 +92,10 @@
                 <p id="pageText">Замовити дзвінок</p>
                 <input type="text" id="name" placeholder="Ваше ім’я">
                 <input type="text" id="phone" placeholder="Телефон">
-                <input type="button" value="Відправити">
+                <button class="popup-btn">Відправити</button>
             </div>
             <a href="#" id="button" class="button">Замовити дзвінок</a>
+            <div  id="burger" class="burger"></div>
     </header>
     <main class="wrapper padding">
         <div class="main_text items_center wrapper">

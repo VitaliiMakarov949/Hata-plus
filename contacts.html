@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -14,10 +14,12 @@
 
 <body>
     <header class="shadow">
+        <div id="black_bg"></div>
         <div class="topline">
             <div class="wrapper flex-between items_center toptext">
                 <nav>
                     <ul id="menu" class="menu flex-between ">
+                        <li id="cancel"><a href="">X</a></li>
                         <li class="firstmenu"><a href="index.html">Головна</a></li>
                         <li class="firstmenu"><a href="#">Про компанію</a>
                         </li>
@@ -84,20 +86,20 @@
                             alt="">hataplus@hata.com.ua</a></p>
                 <p><a href="#" class="skype"><img src="img/skype.svg" alt="">hataplus</a></p>
             </div>
+            <div id="dark"></div>
             <div id="popup">
-                <div id="dark"></div>
                 <a href="#" id="close">X</a>
-                <input type="text" id="title" placeholder="Ваше ім’я">
-                <input type="text" id="title" placeholder="Телефон">
-                <input type="button" value="Відправити">
                 <p id="pageText">Замовити дзвінок</p>
+                <input type="text" id="name" placeholder="Ваше ім’я">
+                <input type="text" id="phone" placeholder="Телефон">
+                <button class="popup-btn">Відправити</button>
             </div>
             <a href="#" id="button" class="button">Замовити дзвінок</a>
-        </div>
+        <div  id="burger" class="burger"></div>
     </header>
     <main class="line ">
         <h1 class="contact">Контакти</h1>
-        <div class=" items_center page">
+        <div class="page">
             <div class="items_center">
                 <p class="office">Наш офіс</p>
                 <p class="address">с. Війтівці, Хмельницька обл. 27500</p>
@@ -110,8 +112,8 @@
             <div>
                 <p class="office">Консультація</p>
                 <p class="manager">менеджер:</p>
-                <div class="phone items_center">
-                    <a href="tel:+380971002525" class="number">+38(097) 100-25-25</a>
+                <div class="phone">
+                    <a href="tel:+380971002525" class="number nul">+38(097) 100-25-25</a>
                     <p class="director">директор:</p>
                     <a href="tel:+380971002525" class="number">+38(097) 100-25-25</a>
                 </div>
