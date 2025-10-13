@@ -1402,7 +1402,7 @@ textarea {
     color: #25252c;
     border: 2px solid #fd8300;
     padding: 15px 30px;
-    border-radius: 20px;
+    border-radius: 35px;
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
@@ -1410,10 +1410,7 @@ textarea {
 }
 
 #button:hover {
-
     background: #e86e00;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
 }
 
 .custom-checkbox {
