@@ -207,9 +207,11 @@ footer {
 
 
 .main_image {
-    max-width: 100%;
-    margin-bottom: 10rem;
+    width: 100vw;      
     background-image: url(../img/Rectangle.png);
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-55vw + 55%);
+    margin-top: 30px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1659,7 +1661,6 @@ label {
 #close:hover {
     color: #fd8300;
 }
-
 @media screen and (min-width: 768px) {
     html {
         font-size: .9px;
@@ -1721,9 +1722,7 @@ label {
         padding: 10rem 0 10rem;
     }
 
-    .top {
-        flex-wrap: nowrap;
-    }
+    
 
 
     aside {
