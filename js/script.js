@@ -38,7 +38,11 @@ button.onclick = () => {
 dark.onclick = () => {
     dark.style.display = "block"
 }
-
+dark.onclick = () => {
+    dark.style.display = "block"
+    popup.style.display = "none"
+    dark.style.display = "none"
+}
 close.onclick = () => {
     popup.style.display = "none"
     dark.style.display = "none"
