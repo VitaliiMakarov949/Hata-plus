@@ -7,17 +7,15 @@ const black_bg = document.getElementById('black_bg');
 burger.onclick = () => {
     menu.style.right = "0";
     black_bg.style.display = "block";
-    document.body.classList.add('menu-open');
+    menu.style.display = "block"
 }
 cancel.onclick = () => {
     menu.style.right = "-100%";
     black_bg.style.display = "none";
-    document.body.classList.remove('menu-open');
 }
 black_bg.onclick = () => {
     menu.style.right = "-100%";
     black_bg.style.display = "block";
-    document.body.classList.remove('menu-open');
 }
 // eye.onclick = () => {
 //     if(eye.checked) {
@@ -48,6 +46,19 @@ close.onclick = () => {
     dark.style.display = "none"
 }
 
+document.querySelectorAll('figure picture img').forEach(function(img){
+    img.addEventListener('click', function(e){
+        e.preventDefault();
+        document.getElementById('popup-img').src = img.src;
+        document.getElementById('img-popup').style.display = 'flex';
+    });
+});
+
+document.getElementById('img-popup').addEventListener('click', function(e){
+    if(e.target === this){
+        this.style.display = 'none';
+    }
+});
 
 
 
