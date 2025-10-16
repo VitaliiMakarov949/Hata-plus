@@ -45,6 +45,7 @@ close.onclick = () => {
     popup.style.display = "none"
     dark.style.display = "none"
 }
+const chest = document.getElementById('chest');
 
 document.querySelectorAll('figure picture img').forEach(function(img){
     img.addEventListener('click', function(e){
@@ -57,6 +58,7 @@ document.querySelectorAll('figure picture img').forEach(function(img){
 document.getElementById('img-popup').addEventListener('click', function(e){
     if(e.target === this){
         this.style.display = 'none';
+        chest.style.display = "none";
     }
 });
 
