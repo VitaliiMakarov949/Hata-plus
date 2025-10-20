@@ -1678,6 +1678,15 @@ label {
 #chest:hover {
     color: #fd8300;
 }
+.popup-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #0078ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
 @media screen and (min-width: 768px) {
     html {
         font-size: .9px;
