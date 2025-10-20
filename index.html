@@ -90,11 +90,13 @@
             <div id="popup">
                 <a href="#" id="close">X</a>
                 <p id="pageText">Замовити дзвінок</p>
-                <input type="text" id="name" placeholder="Ваше ім’я">
-                <input type="text" id="phone" placeholder="Телефон">
-                <button class="popup-btn">Відправити</button>
+                <form id="callbackForm">
+                    <input type="text" id="name" name="name" placeholder="Ваше ім’я" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                    <button type="submit" class="button" id="button">Відправити</button>
+                </form>
             </div>
-            <a href="#" id="button" class="button">Замовити дзвінок</a>
+            <!-- <a href="#" id="button" class="button">Замовити дзвінок</a> -->
             <div id="burger" class="burger"></div>
             <div class="main_image main_text items_center">
                 <h2 class="mainword">Пропозиція місяця</h2>
