@@ -293,12 +293,13 @@ sup {
 
 h1 {
     font-family: "Roboto Slab";
-    padding: 0rem 0 28rem;
+    padding: 0rem 10rem 28rem;
     font-size: 30rem;
 }
 
 .first {
     padding-bottom: 20rem;
+    padding-left: 10rem;
 }
 
 .detail {
@@ -307,6 +308,7 @@ h1 {
     text-decoration: none;
     color: #25252c;
     font-weight: bold;
+    padding-left: 10rem;
 }
 
 .detail:hover {
@@ -539,6 +541,7 @@ aside {
 
 .second {
     font-size: 14rem;
+    padding-left: 10rem;
 }
 
 .asside {
@@ -1694,12 +1697,96 @@ label {
     cursor: pointer;
     border-radius: 5rem;
 }
-
+.between {
+    display: flex;
+    justify-content: space-between;
+}
+.columns {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
 @media screen and (min-width: 768px) {
     html {
-        font-size: .9rem;
+        font-size: .9px;
     }
 
+    #menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 22vw;
+        height: 100vh;
+        background: #1f1f56;
+        z-index: 2;
+        box-shadow: 0 0 40rem rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        padding: 32rem 20rem 0 20rem;
+        display: none;
+        flex-direction: column;
+        gap: 28rem;
+    }
+    #img-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    #popup-img {
+        max-width: 80vw;
+        max-height: 80vh;
+        border: 5rem solid white;
+    }
+    .between {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 1px;
+    }
+    .columns {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .main_image {
+        width: 100vw;
+        background-image: url(../img/Rectangle.png);
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-55vw + 55%);
+        margin-top: 30rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .top {
+        padding: 80rem 0rem 29rem 0;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .flex-between {
+        display: flex;
+        justify-content: space-between;
+    }
+    .between {
+        display: flex;
+        justify-content: space-between;
+    }
+    .column {
+        column-gap: 24rem;
+        flex-wrap: nowrap;
+    }
     #menu a {
         font-size: 12rem;
     }
@@ -1708,7 +1795,7 @@ label {
         font-size: 14rem;
         position: static;
         right: 0;
-        display: flex;
+        display: flex !important;
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
@@ -1720,7 +1807,7 @@ label {
     }
 
     #burger {
-        display: none;
+        display: none !important;
     }
 
     #cancel {
@@ -1767,58 +1854,18 @@ label {
         padding: 10rem;
         width: 30%;
     }
-
-}
-
-#img-popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-#popup-img {
-    max-width: 80vw;
-    max-height: 80vh;
-    border: 5rem solid white;
-}
-
-@media screen and (min-width: 1024px) {
-    html {
-        font-size: 1px;
+    .first {
+        padding-bottom: 20rem;
+        padding-left: 0rem;
     }
-
-    .main_image {
-        width: 100vw;
-        background-image: url(../img/Rectangle.png);
-        margin-left: calc(-50vw + 50%);
-        margin-right: calc(-55vw + 55%);
-        margin-top: 30rem;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    .second {
+        padding-left: 0rem;
     }
-
-    .top {
-        padding: 80rem 50rem 29rem 0;
-        flex-wrap: wrap;
-        position: relative;
+    h1 {
+        padding: 0rem 0rem 28rem;
     }
-
-    .flex-between {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .column {
-        column-gap: 24rem;
-        flex-wrap: wrap;
+    .detail {
+        padding-left: 0rem;
     }
 }
 
@@ -1838,4 +1885,8 @@ label {
     html {
         font-size: 1.9px;
     }
+    #menu {
+        font-size: 25rem;
+    }
+    
 }
