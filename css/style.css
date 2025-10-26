@@ -62,7 +62,7 @@ ul {
 }
 
 .shadow {
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 5rem 5rem rgba(0, 0, 0, 0.06);
 
 }
 
@@ -104,23 +104,24 @@ footer {
     position: fixed;
     top: 0;
     left: 0%;
-    width: calc(100% + 5px);
+    width: calc(100% + 5rem);
     background-color: #1f1f56;
     flex-wrap: wrap;
     z-index: 2;
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 5rem 5rem rgba(0, 0, 0, 0.06);
 
 }
 
 .top {
-    padding: 80rem 50rem 29rem 0;
+    padding: 80rem 0 0 0;
     flex-wrap: wrap;
     position: relative;
+    gap: 20rem;
 }
 
 .conect {
     display: flex;
-    gap: 20px;
+    gap: 20rem;
 }
 
 .conect>div {
@@ -130,9 +131,9 @@ footer {
 
 .maps iframe {
     width: 100%;
-    height: 300px;
-    border: 2px solid #d3d3d3;
-    border-radius: 4px;
+    height: 300rem;
+    border: 2rem solid #d3d3d3;
+    border-radius: 4rem;
 }
 
 .menu {
@@ -207,11 +208,9 @@ footer {
 
 
 .main_image {
-    width: 100vw;      
+    width: 100%;
     background-image: url(../img/Rectangle.png);
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-55vw + 55%);
-    margin-top: 30px;
+    margin-top: 30rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -264,11 +263,11 @@ footer {
     color: #fff;
     font-family: 'Roboto Slab', Arial, sans-serif;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 14rem;
     border: none;
-    border-radius: 30px;
-    padding: 12px 31px;
-    box-shadow: 0 2px 8px rgba(255, 153, 0, 0.08);
+    border-radius: 30rem;
+    padding: 12rem 31rem;
+    box-shadow: 0 2rem 8rem rgba(255, 153, 0, 0.08);
     cursor: pointer;
     text-align: center;
 }
@@ -289,6 +288,7 @@ sup {
     font-weight: 700;
     font-family: "Roboto Slab";
     padding: 31rem 0 25rem;
+    text-align: center;
 }
 
 h1 {
@@ -343,6 +343,10 @@ figcaption h3 {
     color: #9999a6;
 }
 
+.flex {
+    display: flex;
+}
+
 .description {
     max-width: 677rem;
     font-size: 14rem;
@@ -360,7 +364,7 @@ figcaption h3 {
 
 .flex-between {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .sidebar {
@@ -478,7 +482,7 @@ path {
 
 .menuside a {
     background-color: #e4e4ec;
-    padding: 30px;
+    padding: 30rem;
     display: block;
 }
 
@@ -530,8 +534,7 @@ path {
 aside {
     width: 100%;
     position: static;
-    padding: 10px;
-    z-index: 1;
+    padding: 10rem;
 }
 
 .second {
@@ -553,20 +556,22 @@ aside {
 }
 
 .asside>li>a {
-    font-size: 16px;
-    border-bottom: 1px solid #cecedd;
+    font-size: 16rem;
+    border-bottom: 1rem solid #cecedd;
 }
 
 .asside>li:last-child>a {
     border-bottom: none;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8rem 8rem;
     overflow: hidden;
 }
+
 .sidemenu>li:last-child>a {
     border-bottom: none;
-    border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2rem 2rem;
     overflow: hidden;
 }
+
 .sidemenu li>a:hover {
     display: block;
     width: 100%;
@@ -586,7 +591,7 @@ aside {
 
 .sidemenu a {
     display: block;
-    padding-left: 5px;
+    padding-left: 5rem;
     color: #25252c !important;
 
 }
@@ -606,16 +611,16 @@ aside {
     display: none;
     position: absolute;
     top: 0;
-    left: calc(100% + 5px);
+    left: calc(100% + 5rem);
     background-color: #e4e4ec;
-    min-width: 150px;
+    min-width: 150rem;
     z-index: 1000;
-    border-radius: 2px;
+    border-radius: 2rem;
 }
 
 .rigthmenu li {
-    border-bottom: 1px solid #cecedd;
-    border-radius: 1px;
+    border-bottom: 1rem solid #cecedd;
+    border-radius: 1rem;
 }
 
 .rigthmenu li:last-child a {
@@ -642,8 +647,8 @@ aside {
     content: "";
     position: absolute;
     top: 0;
-    left: -10px;
-    width: 15px;
+    left: -10rem;
+    width: 15rem;
     height: 100%;
     background: transparent;
 
@@ -655,7 +660,7 @@ aside {
 }
 
 .asside>li:last-child {
-    border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2rem 2rem;
     overflow: hidden;
     background-color: #e4e4ec;
     border: none;
@@ -705,7 +710,7 @@ figure picture img {
     width: 100%;
     height: auto;
     transition: .5s ease;
-    padding-bottom: 5px;
+    padding-bottom: 5rem;
 }
 
 figure:hover picture img {
@@ -802,7 +807,7 @@ figcaption a {
 
 .menu a {
     text-decoration: none;
-    font-size: 14rem;
+    font-size: 20rem;
     letter-spacing: 2rem;
     line-height: 1.7em;
     color: #b1b1d2;
@@ -880,7 +885,7 @@ figcaption a {
     border-collapse: collapse;
     text-align: center;
     font-size: 15rem;
-    border-radius: 5px;
+    border-radius: 5rem;
     overflow: hidden;
 }
 
@@ -889,7 +894,7 @@ figcaption a {
     background-color: #1d2a5c;
     color: #fff;
     padding: 8rem;
-    border: 1px solid #274569;
+    border: 1rem solid #274569;
     border-top: none;
 }
 
@@ -898,31 +903,31 @@ figcaption a {
     background-color: #e4e4ec;
     padding: 13rem 0 12rem;
     color: #666;
-    border: 1px solid #cecedd;
+    border: 1rem solid #cecedd;
     border-bottom: none;
     border-left: none;
 }
 
 .table_main th:first-child {
     text-align: left;
-    padding-left: 20px;
+    padding-left: 20rem;
 }
 
 .cottages td:first-child {
     text-align: left;
-    padding-left: 20px;
+    padding-left: 20rem;
 }
 
 .cottages td:last-child {
     text-align: right;
-    padding-right: 20px;
+    padding-right: 20rem;
     border-left: none;
     border-right: none;
 }
 
 .table_main th:last-child {
     text-align: right;
-    padding-right: 20px;
+    padding-right: 20rem;
 }
 
 .cottages tr:hover td {
@@ -1143,12 +1148,12 @@ path {
 
 
 .sidemenu li {
-    font-size: 12px;
-    letter-spacing: 2px;
-    line-height: 24px;
+    font-size: 12rem;
+    letter-spacing: 2rem;
+    line-height: 24rem;
     color: #25252c;
-    border-bottom: 1px solid #cecedd;
-    border-radius: 2px;
+    border-bottom: 1rem solid #cecedd;
+    border-radius: 2rem;
 }
 
 .sidemenu li:last-child a {
@@ -1167,29 +1172,29 @@ path {
 .menu li .sidemenu {
     display: none;
     position: absolute;
-    top: calc(100% + 5px);
+    top: calc(100% + 5rem);
     left: 0;
     min-width: 140rem;
     background-color: #e4e4ec;
     z-index: 1;
-    border-radius: 2px;
+    border-radius: 2rem;
 }
 
 .sidemenu li:first-child {
-    border-radius: 2px 2px 0 0;
+    border-radius: 2rem 2rem 0 0;
     overflow: hidden;
 }
 
 .sidemenu li:last-child {
-    border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2rem 2rem;
 }
 
 .sidemenu::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 5px;
-    top: -5px;
+    height: 5rem;
+    top: -5rem;
     left: 0;
 }
 
@@ -1229,7 +1234,7 @@ figcaption h4::before {
 
 .column {
     column-gap: 24rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 
 .items_center {
@@ -1287,7 +1292,7 @@ figure p {
 }
 
 .contact {
-    font-size: 24px;
+    font-size: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -1341,8 +1346,8 @@ figure p {
 }
 
 .mail {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16rem;
+    line-height: 24rem;
     text-decoration: underline;
     color: #25252c;
     display: flex;
@@ -1360,42 +1365,42 @@ figure p {
 
 
 .contact-form h3 {
-    font-size: 18px;
+    font-size: 18rem;
 }
 
 .form-row {
     display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 10rem;
+    margin-bottom: 10rem;
 }
 
 textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
+    padding: 10rem;
+    border: 1rem solid #ccc;
+    border-radius: 4rem;
+    font-size: 14rem;
 }
 
 input {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
+    padding: 10rem;
+    border: 1rem solid #ccc;
+    border-radius: 4rem;
+    font-size: 14rem;
 }
 
 textarea {
     resize: vertical;
-    min-height: 100px;
-    max-height: 200px;
+    min-height: 100rem;
+    max-height: 200rem;
 }
 
 .form-footer {
     display: flex;
     align-items: center;
-    padding-top: 10px;
-    gap: 10px;
+    padding-top: 10rem;
+    gap: 10rem;
 }
 
 .news {
@@ -1405,11 +1410,11 @@ textarea {
 #button {
     background: #fff;
     color: #25252c;
-    border: 2px solid #fd8300;
-    padding: 15px 30px;
-    border-radius: 35px;
+    border: 2rem solid #fd8300;
+    padding: 15rem 30rem;
+    border-radius: 35rem;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 14rem;
     font-weight: bold;
 
 }
@@ -1422,7 +1427,7 @@ textarea {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 15rem;
     user-select: none;
 }
 
@@ -1431,12 +1436,12 @@ textarea {
 }
 
 .custom-checkbox .checkmark {
-    width: 18px;
-    height: 18px;
-    border: 2px solid #c5c5d4;
-    border-radius: 4px;
+    width: 18rem;
+    height: 18rem;
+    border: 2rem solid #c5c5d4;
+    border-radius: 4rem;
     background: #fff;
-    margin-right: 8px;
+    margin-right: 8rem;
     position: relative;
     display: inline-block;
 }
@@ -1448,12 +1453,12 @@ textarea {
 .custom-checkbox .checkmark:after {
     content: "";
     position: absolute;
-    left: 5px;
-    top: 1px;
-    width: 5px;
-    height: 9px;
+    left: 5rem;
+    top: 1rem;
+    width: 5rem;
+    height: 9rem;
     border: solid #1f1f56;
-    border-width: 0 2px 2px 0;
+    border-width: 0 2rem 2rem 0;
     transform: rotate(45deg);
     display: none;
 }
@@ -1463,7 +1468,7 @@ textarea {
 }
 
 label {
-    font-size: 14px;
+    font-size: 14rem;
     cursor: pointer;
 }
 
@@ -1480,12 +1485,12 @@ label {
 }
 
 .massage {
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
 }
 
 .block {
-    width: 15px;
-    height: 15px;
+    width: 15rem;
+    height: 15rem;
 }
 
 #menu {
@@ -1494,14 +1499,14 @@ label {
     right: -100%;
     width: 60vw;
     height: 100vh;
-    background: #fff;
+    background: #1f1f56;
     z-index: 2;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40rem rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease;
-    padding: 32px 20px 0 20px;
+    padding: 32rem 20rem 0 20rem;
     display: none;
     flex-direction: column;
-    gap: 28px;
+    gap: 28rem;
 }
 
 #black_bg {
@@ -1517,21 +1522,21 @@ label {
 
 #cancel {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 15rem;
+    right: 15rem;
 }
 
 #burger,
 #burger:before,
 #burger:after {
-    width: 50px;
-    height: 5px;
+    width: 50rem;
+    height: 5rem;
     background-color: #25252c;
 }
 
 #burger_container {
     position: relative;
-    right: 50px;
+    right: 50rem;
 
 }
 
@@ -1540,9 +1545,9 @@ label {
     position: fixed;
     width: 50rem;
     height: 5rem;
-    background-color: #1e1ed6;
+    background-color: #1f1f56;
     transform: translateY(150%);
-    top: 5px;
+    top: 25rem;
     right: 10rem;
     z-index: 3;
 }
@@ -1559,11 +1564,10 @@ label {
 #burger::after {
     content: "";
     position: absolute;
-    top: 0;
     left: 0;
     width: 50rem;
     height: 5rem;
-    background-color: #1e1ed6;
+    background-color: #1f1f56;
 }
 
 #burger::before {
@@ -1575,27 +1579,27 @@ label {
 }
 
 #pageText {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 24rem;
+    line-height: 24rem;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 
 #name {
-    font-size: 13px;
-    line-height: 21px;
+    font-size: 13rem;
+    line-height: 21rem;
     color: #9999a6;
     font-style: italic;
-    margin-top: 19px;
+    margin-top: 19rem;
 }
 
 #phone {
-    font-size: 13px;
-    line-height: 21px;
+    font-size: 13rem;
+    line-height: 21rem;
     color: #9999a6;
     font-style: italic;
-    margin: 5px 0 5px;
+    margin: 5rem 0 5rem;
 }
 
 .popup-btn {
@@ -1603,13 +1607,13 @@ label {
     background: #ff9900;
     border: none;
     color: #fff;
-    border-radius: 15px;
-    padding: 10px 0;
-    font-size: 14px;
-    line-height: 24px;
+    border-radius: 15rem;
+    padding: 10rem 0;
+    font-size: 14rem;
+    line-height: 24rem;
     font-family: 'Roboto Slab', serif;
     cursor: pointer;
-    margin-top: 6px;
+    margin-top: 6rem;
 }
 
 .popup-btn:hover {
@@ -1621,14 +1625,14 @@ label {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 410px;
+    width: 410rem;
     max-width: 95vw;
     background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 3px 32px 2px rgba(34, 41, 47, .13);
+    border-radius: 5rem;
+    box-shadow: 0 3rem 32rem 2rem rgba(34, 41, 47, .13);
     z-index: 2;
     transform: translate(-50%, -50%);
-    padding: 32px 22px 28px 22px;
+    padding: 32rem 22rem 28rem 22rem;
     box-sizing: border-box;
 }
 
@@ -1651,10 +1655,10 @@ label {
 
 #close {
     position: absolute;
-    top: 18px;
-    right: 22px;
+    top: 18rem;
+    right: 22rem;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 10rem;
     color: #888;
     font-weight: normal;
     cursor: pointer;
@@ -1664,35 +1668,44 @@ label {
 #close:hover {
     color: #fd8300;
 }
+
 #chest {
     position: absolute;
-    top: 18px;
-    right: 22px;
+    top: 18rem;
+    right: 22rem;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 10rem;
     color: #888;
     font-weight: normal;
     cursor: pointer;
     transition: color .2s;
 }
+
 #chest:hover {
     color: #fd8300;
 }
+
 .popup-btn {
-    margin-top: 10px;
-    padding: 10px 20px;
+    margin-top: 10rem;
+    padding: 10rem 20rem;
     background: #ff9900;
     border: none;
     color: white;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 5rem;
 }
+
 @media screen and (min-width: 768px) {
     html {
-        font-size: .9px;
+        font-size: .9rem;
+    }
+
+    #menu a {
+        font-size: 12rem;
     }
 
     #menu {
+        font-size: 14rem;
         position: static;
         right: 0;
         display: flex;
@@ -1741,46 +1754,71 @@ label {
     }
 
     .firstmenu {
-        font-size: 14px;
-        letter-spacing: 2px;
-        line-height: 24px;
+        font-size: 14rem;
+        letter-spacing: 2rem;
+        line-height: 24rem;
         color: #b1b1d2;
         padding: 10rem 0 10rem;
     }
-
-    
-
 
     aside {
         display: block;
         position: static;
         padding: 10rem;
-        z-index: 1;
         width: 30%;
     }
 
-    .column {
-        flex-wrap: nowrap;
-    }
-
 }
+
 #img-popup {
     display: none;
     position: fixed;
-    top: 0; left: 0;
-    width: 100vw; height: 100vh;
-    background: rgba(0,0,0,0.7);
-    justify-content: center; align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
 }
+
 #popup-img {
-    max-width: 80vw; max-height: 80vh;
-    border: 5px solid white;
+    max-width: 80vw;
+    max-height: 80vh;
+    border: 5rem solid white;
 }
 
 @media screen and (min-width: 1024px) {
     html {
         font-size: 1px;
+    }
+
+    .main_image {
+        width: 100vw;
+        background-image: url(../img/Rectangle.png);
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-55vw + 55%);
+        margin-top: 30rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .top {
+        padding: 80rem 50rem 29rem 0;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .flex-between {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column {
+        column-gap: 24rem;
+        flex-wrap: wrap;
     }
 }
 

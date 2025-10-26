@@ -90,11 +90,13 @@
             <div id="popup">
                 <a href="#" id="close">X</a>
                 <p id="pageText">Замовити дзвінок</p>
-                <input type="text" id="name" placeholder="Ваше ім’я">
-                <input type="text" id="phone" placeholder="Телефон">
-                <button class="popup-btn">Відправити</button>
+                <form id="callbackForm" action="SendDate.php" method="post">
+                    <input type="text" id="name" name="name" placeholder="Ваше ім’я">
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон">
+                    <button type="submit" class="popup-btn">Відправити</button>
+                </form>
             </div>
-            <a href="#" id="button" class="button">Замовити дзвінок</a>
+            <button id="button" class="button">Замовити дзвінок</button>
         <div  id="burger" class="burger"></div>
     </header>
     <main class="line ">
@@ -136,16 +138,16 @@
             </div>
             <div class="contact-form around_flex">
                 <h3 class="form">Форма зворотного зв'язку</h3>
-                <form action="#" method="post">
+                <form action="sendforma.php" method="post">
                     <div class="form-row">
                         <input type="text" name="name" placeholder="Ваше ім’я" required>
                         <input type="tel" name="phone" placeholder="Телефон" required>
                     </div>
-                    <input type="text" name="subject" placeholder="Тема повідомлення" class="massage">
-                    <textarea name="message" placeholder="Текст"></textarea>
+                    <input type="text" id="textMessage" name="subject" placeholder="Тема повідомлення" class="massage">
+                    <textarea id="message" name="message" placeholder="Текст"></textarea>
 
                     <div class="form-footer">
-                        <button type="submit" class="submit">Відправити</button>
+                        <button type="submit" class="submit" >Відправити</button>
                         <label class="custom-checkbox">
                             <input type="checkbox" name="subscribe" class="block">
                             <span class="checkmark"></span>

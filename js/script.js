@@ -8,14 +8,17 @@ burger.onclick = () => {
     menu.style.right = "0";
     black_bg.style.display = "block";
     menu.style.display = "block"
+    burger.style.display = "none"
 }
 cancel.onclick = () => {
     menu.style.right = "-100%";
     black_bg.style.display = "none";
+    burger.style.display = "block"
 }
 black_bg.onclick = () => {
     menu.style.right = "-100%";
-    black_bg.style.display = "block";
+    black_bg.style.display = "none";
+    burger.style.display = "block"
 }
 // eye.onclick = () => {
 //     if(eye.checked) {

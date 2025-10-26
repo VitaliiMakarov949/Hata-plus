@@ -42,7 +42,7 @@
                         <li class="firstmenu"><a href="contacts.html">Контакти</a></li>
                     </ul>
                 </nav>
-                <div class="flex-between column items_center">
+                <div class="flex column items_center">
                     <a href="#" class="icon-link">
                         <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19" width="10"
                             height="19">
@@ -90,14 +90,13 @@
             <div id="popup">
                 <a href="#" id="close">X</a>
                 <p id="pageText">Замовити дзвінок</p>
-                <form id="callbackForm">
-                    <input type="text" id="name" name="name" placeholder="Ваше ім’я" required>
-                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                <form id="callbackForm" action="SendDate.php" method="post">
+                    <input type="text" id="name" name="name" placeholder="Ваше ім’я">
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон">
                     <button type="submit" class="popup-btn">Відправити</button>
                 </form>
             </div>
-            <!-- <button id="button" class="button">Замовити дзвінок</button> -->
-            <a href="#" id="button" class="button">Замовити дзвінок</a>
+            <button id="button" class="button">Замовити дзвінок</button>
             <div id="burger" class="burger"></div>
             <div class="main_image main_text items_center">
                 <h2 class="mainword">Пропозиція місяця</h2>
@@ -136,7 +135,7 @@
                     <a href="#" class="detail">Детальніше про нас</a>
                 </div>
                 <hr class="hr">
-                <h3 class="project">Популярні проекти</h3>
+                <h3 class="project items_center ">Популярні проекти</h3>
                 <div class="column imagesmain items_center">
                     <figure>
                         <a href="#">
