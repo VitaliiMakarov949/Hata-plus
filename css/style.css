@@ -420,7 +420,7 @@ path {
 }
 
 .icons {
-    margin-left: auto;
+    margin-left: none;
 }
 
 .icon-link:hover path {
@@ -1244,7 +1244,9 @@ figcaption h4::before {
     column-gap: 24rem;
     flex-wrap: wrap-reverse;
 }
-
+.columnis {
+    flex-wrap: wrap-reverse;
+}
 .items_center {
     align-items: center;
 }
@@ -1715,7 +1717,10 @@ label {
     html {
         font-size: .9px;
     }
-
+    .columnis {
+        flex-wrap: wrap-reverse;
+        gap: 20rem;
+    }
     #menu {
         position: fixed;
         top: 0;
@@ -1760,9 +1765,16 @@ label {
     html {
         font-size: 1px;
     }
+    .icons {
+        margin-left: auto;
+    }
     .columns {
         display: flex;
         flex-wrap: nowrap;
+    }
+    .columnis {
+        flex-wrap: nowrap;
+        gap: 20rem;
     }
     .main_image {
         width: 100vw;
