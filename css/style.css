@@ -105,6 +105,7 @@ footer {
     top: 0;
     left: 0%;
     width: calc(100% + 5rem);
+    height: 55rem;
     background-color: #1f1f56;
     flex-wrap: wrap;
     z-index: 2;
@@ -347,6 +348,8 @@ figcaption h3 {
 
 .flex {
     display: flex;
+    align-items: center;
+    padding: 10rem 0 0 15rem;
 }
 
 .description {
@@ -416,7 +419,9 @@ path {
     fill: #fff;
 }
 
-.icons {}
+.icons {
+    margin-left: auto;
+}
 
 .icon-link:hover path {
     fill: #fd8300;
@@ -1548,7 +1553,7 @@ label {
     position: fixed;
     width: 50rem;
     height: 5rem;
-    background-color: #1f1f56;
+    background-color: #fff;
     transform: translateY(150%);
     top: 25rem;
     right: 10rem;
@@ -1570,7 +1575,7 @@ label {
     left: 0;
     width: 50rem;
     height: 5rem;
-    background-color: #1f1f56;
+    background-color: #fff;
 }
 
 #burger::before {
@@ -1682,6 +1687,7 @@ label {
     font-weight: normal;
     cursor: pointer;
     transition: color .2s;
+    display: none;
 }
 
 #chest:hover {
@@ -1867,6 +1873,11 @@ label {
     .detail {
         padding-left: 0rem;
     }
+    .flex {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1888,5 +1899,16 @@ label {
     #menu {
         font-size: 25rem;
     }
-    
+    img {
+        width: 15rem;
+        height: 15rem;
+    }
+    svg {
+        width: 15rem;
+        height: 15rem;
+    }
+    .logo img {
+        height: 50rem;
+        width: 200rem;
+    }
 }
