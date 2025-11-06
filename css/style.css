@@ -536,6 +536,7 @@ path {
 .imagesmain {
     display: flex;
     justify-content: center;
+    gap: 5rem;
 }
 
 aside {
@@ -1557,7 +1558,7 @@ label {
     height: 5rem;
     background-color: #fff;
     transform: translateY(150%);
-    top: 25rem;
+    top: 20rem;
     right: 10rem;
     z-index: 3;
 }
@@ -1888,7 +1889,10 @@ label {
     .flex {
         display: flex;
         align-items: center;
-        padding: 0;
+        padding: 5rem;
+    }
+    .project {
+        text-align: start;
     }
 }
 
