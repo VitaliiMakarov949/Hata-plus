@@ -1766,9 +1766,7 @@ label {
     html {
         font-size: 1px;
     }
-    .icons {
-        margin-left: auto;
-    }
+    
     .columns {
         display: flex;
         flex-wrap: nowrap;
@@ -1778,7 +1776,7 @@ label {
         gap: 20rem;
     }
     .main_image {
-        width: 100vw;
+        width: 100%;
         background-image: url(../img/Rectangle.png);
         margin-left: calc(-50vw + 50%);
         margin-right: calc(-55vw + 55%);
@@ -1796,7 +1794,7 @@ label {
 
     .flex-between {
         display: flex;
-        justify-content: space-between;
+        
     }
     .between {
         display: flex;
@@ -1889,6 +1887,7 @@ label {
     .flex {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding: 5rem;
     }
     .project {
